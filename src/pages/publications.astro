@@ -1,0 +1,145 @@
+---
+import Base from "../layouts/Base.astro";
+import PaperRow from "../components/PaperRow.astro";
+import { papers, metrics, profile, isRefereedArticle, CATEGORY_LABEL, type Category } from "../lib/data";
+
+const years = [...new Set(papers.map((p) => p.year))].sort((a, b) => b - a);
+const cats = Object.keys(CATEGORY_LABEL) as Category[];
+const count = (c: Category | "all", refOnly: boolean) =>
+  papers.filter((p) => (c === "all" || p.category === c) && (!refOnly || isRefereedArticle(p))).length;
+const m = metrics.headline;
+---
+<Base title="Publications" description={`Publications of ${profile.name}: first-author, key-contributor and co-authored papers, from NASA ADS.`}>
+  <div class="wrap page">
+    <header class="head">
+      <p class="label"><span class="idx">06</span>Publications</p>
+      <h1>Publications</h1>
+      <p class="sub">
+        {metrics.counts.refereed} refereed papers, {metrics.counts.first_author} as first author ·
+        h-index {m.h_index} · {m.citations} citations <span class="muted">({m.source})</span>
+      </p>
+    </header>
+
+    <form class="filters" aria-label="Filter publications" hidden>
+      <div class="chips" role="radiogroup" aria-label="Role">
+        {(["all", ...cats] as const).map((c) => (
+          <button type="button" class="chip" data-cat={c} role="radio" aria-checked={c === "all" ? "true" : "false"}>
+            {c === "all" ? "All" : CATEGORY_LABEL[c]}
+            <span class="n" data-n-all={count(c, false)} data-n-ref={count(c, true)}>{count(c, false)}</span>
+          </button>
+        ))}
+      </div>
+      <label class="ref">
+        <input type="checkbox" name="refereed" checked />
+        <span>Refereed only</span>
+      </label>
+    </form>
+
+    <p class="legend mono muted">
+      First author · Key contributor = 2nd–3rd author · Co-author = 4th onwards · Refereed only = refereed journal articles.
+      Citation counts from NASA ADS; updated automatically.
+    </p>
+
+    <div class="years">
+      {years.map((y) => (
+        <section class="year" data-year={y}>
+          <h2 class="yh mono">{y}</h2>
+          <ul>{papers.filter((p) => p.year === y).map((p) => <PaperRow paper={p} />)}</ul>
+        </section>
+      ))}
+    </div>
+    <p class="empty muted" hidden>No publications match these filters.</p>
+  </div>
+</Base>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>(".filters")!;
+  const chips = [...form.querySelectorAll<HTMLButtonElement>(".chip")];
+  const ref = form.querySelector<HTMLInputElement>("input[name=refereed]")!;
+  const rows = [...document.querySelectorAll<HTMLElement>(".paper")];
+  const years = [...document.querySelectorAll<HTMLElement>(".year")];
+  const empty = document.querySelector<HTMLElement>(".empty")!;
+  const CATS = ["all", "first", "key", "coauthor"];
+
+  const params = new URLSearchParams(location.search);
+  let cat = CATS.includes(params.get("cat") ?? "") ? params.get("cat")! : "all";
+  ref.checked = params.get("refereed") !== "0"; // refereed-only is the default view
+  form.hidden = false;
+
+  function apply() {
+    const refOnly = ref.checked;
+    chips.forEach((c) => {
+      c.setAttribute("aria-checked", String(c.dataset.cat === cat));
+      const n = c.querySelector<HTMLElement>(".n")!;
+      n.textContent = refOnly ? n.dataset.nRef! : n.dataset.nAll!;
+    });
+    let shown = 0;
+    rows.forEach((r) => {
+      const ok = (cat === "all" || r.dataset.cat === cat) && (!refOnly || r.dataset.ref === "1");
+      r.hidden = !ok;
+      if (ok) shown++;
+    });
+    years.forEach((y) => (y.hidden = !y.querySelector(".paper:not([hidden])")));
+    empty.hidden = shown > 0;
+    const q = new URLSearchParams();
+    if (cat !== "all") q.set("cat", cat);
+    if (!refOnly) q.set("refereed", "0");
+    history.replaceState(null, "", q.toString() ? `?${q}` : location.pathname);
+  }
+
+  chips.forEach((c) => c.addEventListener("click", () => { cat = c.dataset.cat!; apply(); }));
+  form.addEventListener("keydown", (e) => {
+    if (!(e.target as HTMLElement).classList.contains("chip")) return;
+    const i = chips.indexOf(e.target as HTMLButtonElement);
+    const d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+    if (!d) return;
+    e.preventDefault();
+    const next = chips[(i + d + chips.length) % chips.length];
+    next.focus(); cat = next.dataset.cat!; apply();
+  });
+  ref.addEventListener("change", apply);
+  apply();
+</script>
+
+<style>
+  .page { max-width: 52rem; padding-top: clamp(3.5rem, 10vh, 6rem); }
+  .head .label { margin: 0 0 1rem; }
+  .idx { color: var(--star); margin-right: .7rem; }
+  h1 { font-size: clamp(2.4rem, 6vw, 3.8rem); font-weight: 350; letter-spacing: -.01em; }
+  .sub { margin: 1rem 0 1rem; font-size: 1.05rem; font-style: italic; }
+  .filters {
+    position: sticky; top: 3.4rem; z-index: 5;
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .8rem 1.5rem;
+    margin: 2.5rem 0 0; padding: .9rem 0;
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--faint);
+  }
+  .filters[hidden] { display: none; }
+  .chips { display: flex; flex-wrap: wrap; gap: .45rem; }
+  .chip {
+    font-family: var(--mono); font-size: .68rem; letter-spacing: .06em;
+    display: inline-flex; align-items: center; gap: .5rem;
+    padding: .38rem .8rem; border-radius: 999px; cursor: pointer;
+    color: var(--muted); background: transparent; border: 1px solid var(--line);
+    transition: all .15s ease;
+  }
+  .chip:hover { color: var(--fg); border-color: var(--muted); }
+  .chip[aria-checked="true"] { color: var(--bg); background: var(--fg); border-color: var(--fg); }
+  .chip[aria-checked="true"] .n { color: var(--accent-soft); }
+  .n { opacity: .8; }
+  .ref { display: inline-flex; align-items: center; gap: .5rem; font-family: var(--mono); font-size: .68rem; letter-spacing: .06em; color: var(--muted); cursor: pointer; }
+  .ref input { accent-color: var(--accent); width: .95rem; height: .95rem; margin: 0; }
+  .legend { margin: 1rem 0 0; font-size: .62rem; }
+  .years { margin-top: 1.5rem; }
+  .year { display: grid; grid-template-columns: 4.5rem minmax(0, 1fr); gap: 0 1rem; }
+  .year[hidden] { display: none; }
+  .yh { font-size: .85rem; color: var(--muted); padding-top: 1.15rem; font-weight: 400; margin: 0; position: sticky; top: 7.5rem; align-self: start; }
+  .year ul { list-style: none; margin: 0; padding: 0; }
+  .year :global(.paper[hidden]) { display: none; }
+  @media (max-width: 34rem) {
+    .year { grid-template-columns: 1fr; }
+    .yh { position: static; padding-top: 1.6rem; color: var(--accent); }
+  }
+  .empty { margin-top: 2rem; font-style: italic; }
+</style>

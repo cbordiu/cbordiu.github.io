@@ -1,0 +1,25 @@
+---
+import { metrics, profile } from "../lib/data";
+const year = new Date().getFullYear();
+---
+<footer class="site-footer">
+  <div class="wrap foot">
+    <p>© {year} {profile.name} and Claude
+      <svg class="clawd" viewBox="0 0 13 9" role="img" aria-label="Clawd, the Claude Code mascot" shape-rendering="crispEdges">
+        <path d="M2 0h9v6H2zM0 2h2v2H0zM11 2h2v2h-2zM3 6h1v3H3zM5 6h1v3H5zM7 6h1v3H7zM9 6h1v3H9z" fill="#d97757" />
+        <path d="M4 1.5h1v2H4zM8 1.5h1v2H8z" fill="#1a1410" />
+      </svg></p>
+    <p class="mono muted">
+      Starfield: Yale Bright Star Catalogue, V &lt; 5.8 ·
+      Citations: {metrics.headline.source} ·
+      Built with Astro
+    </p>
+  </div>
+</footer>
+<style>
+  .site-footer { border-top: 1px solid var(--faint); margin-top: 6rem; padding: 2rem 0 3rem; }
+  .foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem; }
+  .foot p { margin: 0; font-size: .85rem; color: var(--muted); }
+  .foot .mono { font-size: .64rem; }
+  .clawd { display: inline-block; width: 1.55em; height: auto; vertical-align: -0.1em; margin: 0 .3em 0 .25em; }
+</style>

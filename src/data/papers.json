@@ -1,0 +1,1750 @@
+[
+  {
+    "id": "2026MNRAS.550g1282L",
+    "title": "Determination of kinematic distances of WISE and SMGPS H II regions in the Galactic plane using SEDIGISM cloud association",
+    "authors": [
+      "M. O. Langa",
+      "M. A. Thompson",
+      "A. J. Rigby"
+    ],
+    "position": 6,
+    "n_authors": 10,
+    "year": 2026,
+    "date": "2026-08",
+    "journal": "MNRAS",
+    "volume": "550",
+    "page": "stag1282",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.550g1282L",
+      "arxiv": "https://arxiv.org/abs/2607.12046",
+      "doi": "https://doi.org/10.1093/mnras/stag1282"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2026MNRAS.550g1194R",
+    "title": "SMGPS: a study of Galactic H II regions with extended morphology",
+    "authors": [
+      "A. J. T. Ramaila",
+      "M. A. Thompson",
+      "O. M. Smirnov"
+    ],
+    "position": 8,
+    "n_authors": 10,
+    "year": 2026,
+    "date": "2026-08",
+    "journal": "MNRAS",
+    "volume": "550",
+    "page": "stag1194",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.550g1194R",
+      "arxiv": "https://arxiv.org/abs/2606.30832",
+      "doi": "https://doi.org/10.1093/mnras/stag1194"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2026ApJ..1005L..34B",
+    "title": "Discovery of Sulfur Oxides in the Ejecta of a B[e] Supergiant",
+    "authors": [
+      "C. Bordiú",
+      "J. R. Rizzo",
+      "D. Navarro-Almaida"
+    ],
+    "position": 1,
+    "n_authors": 15,
+    "year": 2026,
+    "date": "2026-07",
+    "journal": "ApJL",
+    "volume": "1005",
+    "page": "L34",
+    "kind": "article",
+    "refereed": true,
+    "category": "first",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026ApJ..1005L..34B",
+      "arxiv": "https://arxiv.org/abs/2607.02191",
+      "doi": "https://doi.org/10.3847/2041-8213/ae7b2b"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2026arXiv260630844C",
+    "title": "Coherent and Incoherent Emission from the Ordered Magnetospheres of Low-Mass Stars, UCDs, and Massive Stars",
+    "authors": [
+      "F. Cavallaro",
+      "P. Leto",
+      "B. Das"
+    ],
+    "position": 6,
+    "n_authors": 18,
+    "year": 2026,
+    "date": "2026-06",
+    "journal": "arXiv",
+    "volume": null,
+    "page": "arXiv:2606.30844",
+    "kind": "preprint",
+    "refereed": false,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026arXiv260630844C",
+      "arxiv": "https://arxiv.org/abs/2606.30844",
+      "doi": "https://doi.org/10.48550/arXiv.2606.30844"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2026arXiv260626889I",
+    "title": "Supernova remnants in the new radio astronomy era",
+    "authors": [
+      "A. Ingallinera",
+      "M. Arias",
+      "G. Castelletti"
+    ],
+    "position": 4,
+    "n_authors": 28,
+    "year": 2026,
+    "date": "2026-06",
+    "journal": "arXiv",
+    "volume": null,
+    "page": "arXiv:2606.26889",
+    "kind": "preprint",
+    "refereed": false,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026arXiv260626889I",
+      "arxiv": "https://arxiv.org/abs/2606.26889",
+      "doi": "https://doi.org/10.48550/arXiv.2606.26889"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2026arXiv260626278T",
+    "title": "The 10-15 GHz radio continuum survey of the Galactic Plane with SKAO",
+    "authors": [
+      "A. Traficante",
+      "C. Mininni",
+      "F. Cavallaro"
+    ],
+    "position": 9,
+    "n_authors": 66,
+    "year": 2026,
+    "date": "2026-06",
+    "journal": "arXiv",
+    "volume": null,
+    "page": "arXiv:2606.26278",
+    "kind": "preprint",
+    "refereed": false,
+    "category": "coauthor",
+    "citations": 1,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026arXiv260626278T",
+      "arxiv": "https://arxiv.org/abs/2606.26278",
+      "doi": "https://doi.org/10.48550/arXiv.2606.26278"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2026arXiv260625607B",
+    "title": "Evolved massive stars and their impact on their environment",
+    "authors": [
+      "C. S. Buemi",
+      "G. Umana",
+      "C. Trigilio"
+    ],
+    "position": 4,
+    "n_authors": 18,
+    "year": 2026,
+    "date": "2026-06",
+    "journal": "arXiv",
+    "volume": null,
+    "page": "arXiv:2606.25607",
+    "kind": "preprint",
+    "refereed": false,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026arXiv260625607B",
+      "arxiv": "https://arxiv.org/abs/2606.25607",
+      "doi": "https://doi.org/10.48550/arXiv.2606.25607"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2026PASA...43...43F",
+    "title": "ASKAP EMU detection of an Odd Radio Circle (ORC) candidate: J094412─751016 (Anglerfish)",
+    "authors": [
+      "M. D. Filipović",
+      "Z. Smeaton",
+      "A. Bradley"
+    ],
+    "position": 9,
+    "n_authors": 36,
+    "year": 2026,
+    "date": "2026-04",
+    "journal": "PASA",
+    "volume": "43",
+    "page": "e043",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026PASA...43...43F",
+      "arxiv": "https://arxiv.org/abs/2603.21467",
+      "doi": "https://doi.org/10.1017/pasa.2026.10186"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2026MNRAS.546f1849M",
+    "title": "The SARAO MeerKAT Galactic Plane survey compact source catalogue",
+    "authors": [
+      "M. Mutale",
+      "M. A. Thompson",
+      "G. M. Williams"
+    ],
+    "position": 8,
+    "n_authors": 14,
+    "year": 2026,
+    "date": "2026-02",
+    "journal": "MNRAS",
+    "volume": "546",
+    "page": "staf1849",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 5,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.546f1849M",
+      "arxiv": "https://arxiv.org/abs/2510.23707",
+      "doi": "https://doi.org/10.1093/mnras/staf1849"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2026A&A...706A.241L",
+    "title": "A scaling relationship for nonthermal radio emission from ordered magnetospheres: II. Investigating the efficiency of relativistic electron production in the magnetospheres of BA-type stars",
+    "authors": [
+      "P. Leto",
+      "S. Owocki",
+      "C. Trigilio"
+    ],
+    "position": 14,
+    "n_authors": 22,
+    "year": 2026,
+    "date": "2026-02",
+    "journal": "A&A",
+    "volume": "706",
+    "page": "A241",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 2,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026A&A...706A.241L",
+      "arxiv": "https://arxiv.org/abs/2511.05378",
+      "doi": "https://doi.org/10.1051/0004-6361/202557214"
+    },
+    "orcid": true
+  },
+  {
+    "id": "manual-cluster-then-label-2026",
+    "title": "A Semi-supervised \"Cluster-then-Label\" Scheme for Photometric Classification of Evolved Stars",
+    "authors": [],
+    "position": 99,
+    "n_authors": 0,
+    "year": 2026,
+    "date": "2026",
+    "journal": "Book chapter",
+    "volume": null,
+    "page": null,
+    "kind": "chapter",
+    "refereed": false,
+    "category": "first",
+    "citations": 0,
+    "links": {
+      "ads": null,
+      "arxiv": null,
+      "doi": null
+    },
+    "orcid": true,
+    "manual": true
+  },
+  {
+    "id": "2025SerAJ.211...27G",
+    "title": "Multi-Frequency Radio-Continuum Study of the LMC SNR N206 (Goat's Eye) and its \"Zig-Zag\" PWN",
+    "authors": [
+      "M. Ghavam",
+      "Z. J. Smeaton",
+      "M. D. Filipović"
+    ],
+    "position": 5,
+    "n_authors": 20,
+    "year": 2025,
+    "date": "2025-12",
+    "journal": "Serbian Astron. J.",
+    "volume": "211",
+    "page": "27",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 4,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2025SerAJ.211...27G",
+      "arxiv": "https://arxiv.org/abs/2512.01221",
+      "doi": "https://doi.org/10.2298/SAJ2511027G"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2025MNRAS.543.3708B",
+    "title": "MeerKAT discovery of 164 compact radio rings towards the Galactic plane",
+    "authors": [
+      "C. Bordiú",
+      "F. Bufano",
+      "G. Umana"
+    ],
+    "position": 1,
+    "n_authors": 17,
+    "year": 2025,
+    "date": "2025-11",
+    "journal": "MNRAS",
+    "volume": "543",
+    "page": "3708",
+    "kind": "article",
+    "refereed": true,
+    "category": "first",
+    "citations": 1,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2025MNRAS.543.3708B",
+      "arxiv": "https://arxiv.org/abs/2509.20289",
+      "doi": "https://doi.org/10.1093/mnras/staf1667"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2025A&A...703A.186R",
+    "title": "Millimetre continuum from luminous blue variable stars and their environs: NIKA2 observations and Virtual Observatory data",
+    "authors": [
+      "J. R. Rizzo",
+      "C. Bordiú",
+      "A. Ritacco"
+    ],
+    "position": 2,
+    "n_authors": 3,
+    "year": 2025,
+    "date": "2025-11",
+    "journal": "A&A",
+    "volume": "703",
+    "page": "A186",
+    "kind": "article",
+    "refereed": true,
+    "category": "key",
+    "citations": 2,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2025A&A...703A.186R",
+      "arxiv": "https://arxiv.org/abs/2509.05861",
+      "doi": "https://doi.org/10.1051/0004-6361/202555449"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2025A&A...701A.211L",
+    "title": "Broadband radio study of the supernova remnant Kes 73",
+    "authors": [
+      "S. Loru",
+      "A. Ingallinera",
+      "A. Pellizzoni"
+    ],
+    "position": 5,
+    "n_authors": 19,
+    "year": 2025,
+    "date": "2025-09",
+    "journal": "A&A",
+    "volume": "701",
+    "page": "A211",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2025A&A...701A.211L",
+      "arxiv": "https://arxiv.org/abs/2509.15712",
+      "doi": "https://doi.org/10.1051/0004-6361/202555932"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2025PASA...42..104F",
+    "title": "Teleios (G305.4─2.2) ─ the mystery of a perfectly shaped new galactic supernova remnant",
+    "authors": [
+      "M. D. Filipović",
+      "Z. J. Smeaton",
+      "R. Kothes"
+    ],
+    "position": 12,
+    "n_authors": 38,
+    "year": 2025,
+    "date": "2025-08",
+    "journal": "PASA",
+    "volume": "42",
+    "page": "e104",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 14,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2025PASA...42..104F",
+      "arxiv": "https://arxiv.org/abs/2505.04041",
+      "doi": "https://doi.org/10.1017/pasa.2025.10045"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2025PASA...42..101B",
+    "title": "Evolutionary map of the Universe: Detection and analysis of the shell surrounding the runaway Wolf-Rayet star WR16",
+    "authors": [
+      "A. Bradley",
+      "M. D. Filipović",
+      "Z. Smeaton"
+    ],
+    "position": 6,
+    "n_authors": 21,
+    "year": 2025,
+    "date": "2025-07",
+    "journal": "PASA",
+    "volume": "42",
+    "page": "e101",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 5,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2025PASA...42..101B",
+      "arxiv": "https://arxiv.org/abs/2506.23588",
+      "doi": "https://doi.org/10.1017/pasa.2025.10070"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2025A&A...695A.144B",
+    "title": "The SARAO MeerKAT Galactic Plane Survey extended source catalogue",
+    "authors": [
+      "C. Bordiú",
+      "S. Riggi",
+      "F. Bufano"
+    ],
+    "position": 1,
+    "n_authors": 21,
+    "year": 2025,
+    "date": "2025-03",
+    "journal": "A&A",
+    "volume": "695",
+    "page": "A144",
+    "kind": "article",
+    "refereed": true,
+    "category": "first",
+    "citations": 11,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2025A&A...695A.144B",
+      "arxiv": "https://arxiv.org/abs/2502.15640",
+      "doi": "https://doi.org/10.1051/0004-6361/202450356"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2025MNRAS.536.1428W",
+    "title": "The SARAO MeerKAT Galactic Plane Survey filamentary source catalogue",
+    "authors": [
+      "G. M. Williams",
+      "M. A. Thompson",
+      "M. Mutale"
+    ],
+    "position": 5,
+    "n_authors": 14,
+    "year": 2025,
+    "date": "2025-01",
+    "journal": "MNRAS",
+    "volume": "536",
+    "page": "1428",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 4,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2025MNRAS.536.1428W",
+      "arxiv": "https://arxiv.org/abs/2412.07852",
+      "doi": "https://doi.org/10.1093/mnras/stae2690"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2025A&A...693A.247A",
+    "title": "Supernova remnant candidates discovered by the SARAO MeerKAT Galactic Plane Survey",
+    "authors": [
+      "L. D. Anderson",
+      "F. Camilo",
+      "T. Faerber"
+    ],
+    "position": 5,
+    "n_authors": 16,
+    "year": 2025,
+    "date": "2025-01",
+    "journal": "A&A",
+    "volume": "693",
+    "page": "A247",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 21,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2025A&A...693A.247A",
+      "arxiv": "https://arxiv.org/abs/2409.16607",
+      "doi": "https://doi.org/10.1051/0004-6361/202451038"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2024PASA...41..112F",
+    "title": "Diprotodon on the sky. The Large Galactic Supernova Remnant (SNR) G278.94+1.35",
+    "authors": [
+      "M. D. Filipović",
+      "S. Lazarević",
+      "M. Araya"
+    ],
+    "position": 13,
+    "n_authors": 44,
+    "year": 2024,
+    "date": "2024-12",
+    "journal": "PASA",
+    "volume": "41",
+    "page": "e112",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 15,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024PASA...41..112F",
+      "arxiv": "https://arxiv.org/abs/2412.20836",
+      "doi": "https://doi.org/10.1017/pasa.2024.93"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2024A&A...692A.193L",
+    "title": "The MeerKAT view on Galactic supernova remnants",
+    "authors": [
+      "S. Loru",
+      "A. Ingallinera",
+      "G. Umana"
+    ],
+    "position": 4,
+    "n_authors": 15,
+    "year": 2024,
+    "date": "2024-12",
+    "journal": "A&A",
+    "volume": "692",
+    "page": "A193",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 6,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024A&A...692A.193L",
+      "arxiv": null,
+      "doi": "https://doi.org/10.1051/0004-6361/202450404"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2024PASA...41...85R",
+    "title": "Self-supervised contrastive learning of radio data for source detection, classification and peculiar object discovery",
+    "authors": [
+      "S. Riggi",
+      "T. Cecconello",
+      "S. Palazzo"
+    ],
+    "position": 6,
+    "n_authors": 17,
+    "year": 2024,
+    "date": "2024-11",
+    "journal": "PASA",
+    "volume": "41",
+    "page": "e085",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 12,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024PASA...41...85R",
+      "arxiv": "https://arxiv.org/abs/2404.18462",
+      "doi": "https://doi.org/10.1017/pasa.2024.84"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2024MNRAS.534.2918S",
+    "title": "Discovery of Perun (G329.9-0.5): a new, young, Galactic SNR",
+    "authors": [
+      "Z. J. Smeaton",
+      "M. D. Filipović",
+      "S. Lazarević"
+    ],
+    "position": 8,
+    "n_authors": 34,
+    "year": 2024,
+    "date": "2024-11",
+    "journal": "MNRAS",
+    "volume": "534",
+    "page": "2918",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 18,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.534.2918S",
+      "arxiv": null,
+      "doi": "https://doi.org/10.1093/mnras/stae2237"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2024A&A...690A.203B",
+    "title": "Sifting the debris: Patterns in the SNR population with unsupervised ML methods",
+    "authors": [
+      "F. Bufano",
+      "C. Bordiú",
+      "T. Cecconello"
+    ],
+    "position": 2,
+    "n_authors": 16,
+    "year": 2024,
+    "date": "2024-10",
+    "journal": "A&A",
+    "volume": "690",
+    "page": "A203",
+    "kind": "article",
+    "refereed": true,
+    "category": "key",
+    "citations": 1,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024A&A...690A.203B",
+      "arxiv": "https://arxiv.org/abs/2409.06383",
+      "doi": "https://doi.org/10.1051/0004-6361/202451096"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2024A&A...690A..53B",
+    "title": "MeerKAT reveals a ghostly thermal radio ring towards the Galactic Centre",
+    "authors": [
+      "C. Bordiú",
+      "M. D. Filipović",
+      "G. Umana"
+    ],
+    "position": 1,
+    "n_authors": 29,
+    "year": 2024,
+    "date": "2024-10",
+    "journal": "A&A",
+    "volume": "690",
+    "page": "A53",
+    "kind": "article",
+    "refereed": true,
+    "category": "first",
+    "citations": 7,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024A&A...690A..53B",
+      "arxiv": "https://arxiv.org/abs/2408.07727",
+      "doi": "https://doi.org/10.1051/0004-6361/202450766"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2024Msngr.193....9B",
+    "title": "ESO─SKAO Coordinated Surveys: the Galaxy",
+    "authors": [
+      "S. Breen",
+      "R. Schödel",
+      "J. Ilee"
+    ],
+    "position": 11,
+    "n_authors": 12,
+    "year": 2024,
+    "date": "2024-09",
+    "journal": "The Messenger",
+    "volume": "193",
+    "page": "9",
+    "kind": "article",
+    "refereed": false,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024Msngr.193....9B",
+      "arxiv": null,
+      "doi": "https://doi.org/10.18727/0722-6691/5362"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2024IAUGA..32P2225R",
+    "title": "Understanding the LBV evolution by the competing warm dust and ionized winds in their surroundings",
+    "authors": [
+      "J. R. Rizzo",
+      "C. Bordiú"
+    ],
+    "position": 2,
+    "n_authors": 2,
+    "year": 2024,
+    "date": "2024-08",
+    "journal": "IAU General Assembly",
+    "volume": null,
+    "page": "2225",
+    "kind": "abstract",
+    "refereed": false,
+    "category": "key",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024IAUGA..32P2225R",
+      "arxiv": null,
+      "doi": null
+    },
+    "orcid": false
+  },
+  {
+    "id": "2024SPIE13101E..4NB",
+    "title": "Deep learning in the SKA era: patterns in the SNR population with unsupervised ML methods",
+    "authors": [
+      "F. Bufano",
+      "C. Bordiú",
+      "T. Cecconello"
+    ],
+    "position": 2,
+    "n_authors": 16,
+    "year": 2024,
+    "date": "2024-07",
+    "journal": "Proc. SPIE",
+    "volume": "13101",
+    "page": "131014N",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "key",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024SPIE13101E..4NB",
+      "arxiv": null,
+      "doi": "https://doi.org/10.1117/12.3026706"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2024MNRAS.531..649G",
+    "title": "The SARAO MeerKAT 1.3 GHz Galactic Plane Survey",
+    "authors": [
+      "S. Goedhart",
+      "W. D. Cotton",
+      "F. Camilo"
+    ],
+    "position": 9,
+    "n_authors": 130,
+    "year": 2024,
+    "date": "2024-06",
+    "journal": "MNRAS",
+    "volume": "531",
+    "page": "649",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 98,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.531..649G",
+      "arxiv": "https://arxiv.org/abs/2312.07275",
+      "doi": "https://doi.org/10.1093/mnras/stae1166"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2024ASPC..535..191S",
+    "title": "Onboarding SPACE services to the European Open Science Cloud",
+    "authors": [
+      "E. Sciacca",
+      "M. Kronkos",
+      "C. Bordiú"
+    ],
+    "position": 3,
+    "n_authors": 13,
+    "year": 2024,
+    "date": "2024-05",
+    "journal": "ASP Conf. Ser.",
+    "volume": "535",
+    "page": "191",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "key",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024ASPC..535..191S",
+      "arxiv": null,
+      "doi": null
+    },
+    "orcid": false
+  },
+  {
+    "id": "2024ASPC..535...99R",
+    "title": "Radio source analysis services for the SKA and precursors",
+    "authors": [
+      "S. Riggi",
+      "C. Bordiú",
+      "D. Magro"
+    ],
+    "position": 2,
+    "n_authors": 11,
+    "year": 2024,
+    "date": "2024-05",
+    "journal": "ASP Conf. Ser.",
+    "volume": "535",
+    "page": "99",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "key",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024ASPC..535...99R",
+      "arxiv": "https://arxiv.org/abs/2301.02804",
+      "doi": null
+    },
+    "orcid": false
+  },
+  {
+    "id": "2024ASPC..535...61C",
+    "title": "Latent Space Explorer: Unsupervised Data Pattern Discovery on the Cloud",
+    "authors": [
+      "T. Cecconello",
+      "C. Bordiú",
+      "F. Bufano"
+    ],
+    "position": 2,
+    "n_authors": 9,
+    "year": 2024,
+    "date": "2024-05",
+    "journal": "ASP Conf. Ser.",
+    "volume": "535",
+    "page": "61",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "key",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024ASPC..535...61C",
+      "arxiv": "https://arxiv.org/abs/2204.13933",
+      "doi": null
+    },
+    "orcid": false
+  },
+  {
+    "id": "2024MNRAS.529.1579C",
+    "title": "The distance to CRL 618 through its radio expansion parallax",
+    "authors": [
+      "L. Cerrigone",
+      "G. Umana",
+      "C. Trigilio"
+    ],
+    "position": 5,
+    "n_authors": 12,
+    "year": 2024,
+    "date": "2024-04",
+    "journal": "MNRAS",
+    "volume": "529",
+    "page": "1579",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.529.1579C",
+      "arxiv": "https://arxiv.org/abs/2403.04647",
+      "doi": "https://doi.org/10.1093/mnras/stae689"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2024PASA...41...29R",
+    "title": "Classification of compact radio sources in the Galactic plane with supervised machine learning",
+    "authors": [
+      "S. Riggi",
+      "G. Umana",
+      "C. Trigilio"
+    ],
+    "position": 4,
+    "n_authors": 16,
+    "year": 2024,
+    "date": "2024",
+    "journal": "PASA",
+    "volume": "41",
+    "page": "e029",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 6,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024PASA...41...29R",
+      "arxiv": "https://arxiv.org/abs/2402.15232",
+      "doi": "https://doi.org/10.1017/pasa.2024.26"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2024ITAI....5.6524S",
+    "title": "RADiff: Controllable Diffusion Models for Radio Astronomical Maps Generation",
+    "authors": [
+      "R. Sortino",
+      "T. Cecconello",
+      "A. De Marco"
+    ],
+    "position": 11,
+    "n_authors": 13,
+    "year": 2024,
+    "date": "2024",
+    "journal": "IEEE Trans. AI",
+    "volume": "5",
+    "page": "6524",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 1,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2024ITAI....5.6524S",
+      "arxiv": "https://arxiv.org/abs/2307.02392",
+      "doi": "https://doi.org/10.1109/TAI.2024.3436538"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2023AJ....166..149F",
+    "title": "EMU Detection of a Large and Low Surface Brightness Galactic SNR G288.8-6.3",
+    "authors": [
+      "M. D. Filipović",
+      "S. Dai",
+      "B. Arbutina"
+    ],
+    "position": 13,
+    "n_authors": 39,
+    "year": 2023,
+    "date": "2023-10",
+    "journal": "AJ",
+    "volume": "166",
+    "page": "149",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 32,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2023AJ....166..149F",
+      "arxiv": "https://arxiv.org/abs/2308.08716",
+      "doi": "https://doi.org/10.3847/1538-3881/acf19c"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2023A&A...678A..55R",
+    "title": "The rich molecular environment of the luminous blue variable star AFGL 2298",
+    "authors": [
+      "J. R. Rizzo",
+      "C. Bordiú",
+      "C. Buemi"
+    ],
+    "position": 2,
+    "n_authors": 9,
+    "year": 2023,
+    "date": "2023-10",
+    "journal": "A&A",
+    "volume": "678",
+    "page": "A55",
+    "kind": "article",
+    "refereed": true,
+    "category": "key",
+    "citations": 4,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2023A&A...678A..55R",
+      "arxiv": "https://arxiv.org/abs/2307.11851",
+      "doi": "https://doi.org/10.1051/0004-6361/202346980"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2023ExA....56..293S",
+    "title": "Radio astronomical images object detection and segmentation: a benchmark on deep learning methods",
+    "authors": [
+      "R. Sortino",
+      "D. Magro",
+      "G. Fiameni"
+    ],
+    "position": 11,
+    "n_authors": 12,
+    "year": 2023,
+    "date": "2023-08",
+    "journal": "Experimental Astronomy",
+    "volume": "56",
+    "page": "293",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 17,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2023ExA....56..293S",
+      "arxiv": "https://arxiv.org/abs/2303.04506",
+      "doi": "https://doi.org/10.1007/s10686-023-09893-w"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2023eas..conf.2021B",
+    "title": "The role of Luminous Blue Variables as dust polluters",
+    "authors": [
+      "C. Bordiú",
+      "R. Rizzo"
+    ],
+    "position": 1,
+    "n_authors": 2,
+    "year": 2023,
+    "date": "2023-07",
+    "journal": "EAS Annual Meeting",
+    "volume": null,
+    "page": "2021",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "first",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2023eas..conf.2021B",
+      "arxiv": null,
+      "doi": null
+    },
+    "orcid": false
+  },
+  {
+    "id": "2023eas..conf.2007B",
+    "title": "Deep learning in the SKA era: successes, failures and lessons learnt",
+    "authors": [
+      "C. Bordiú"
+    ],
+    "position": 1,
+    "n_authors": 1,
+    "year": 2023,
+    "date": "2023-07",
+    "journal": "EAS Annual Meeting",
+    "volume": null,
+    "page": "2007",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "first",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2023eas..conf.2007B",
+      "arxiv": null,
+      "doi": null
+    },
+    "orcid": false
+  },
+  {
+    "id": "2023eas..conf.1608R",
+    "title": "Circumstellar gas and dust around LBV stars as traced by the NIKA2 camera",
+    "authors": [
+      "R. Rizzo",
+      "A. Ritacco",
+      "C. Bordiú"
+    ],
+    "position": 3,
+    "n_authors": 5,
+    "year": 2023,
+    "date": "2023-07",
+    "journal": "EAS Annual Meeting",
+    "volume": null,
+    "page": "1608",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "key",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2023eas..conf.1608R",
+      "arxiv": null,
+      "doi": null
+    },
+    "orcid": false
+  },
+  {
+    "id": "2023hsa..conf..292R",
+    "title": "The circumstellar medium around five LBV stars through the light of NIKA2 and the Virtual Observatory",
+    "authors": [
+      "J. R. Rizzo",
+      "C. Bordiú",
+      "B. López Martí"
+    ],
+    "position": 2,
+    "n_authors": 6,
+    "year": 2023,
+    "date": "2023-05",
+    "journal": "Highlights of Spanish Astrophysics",
+    "volume": null,
+    "page": "292",
+    "kind": "proceedings",
+    "refereed": true,
+    "category": "key",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2023hsa..conf..292R",
+      "arxiv": null,
+      "doi": null
+    },
+    "orcid": false
+  },
+  {
+    "id": "2023arXiv230500809T",
+    "title": "Star-Planet Interaction at radio wavelengths in YZ Ceti: Inferring planetary magnetic field",
+    "authors": [
+      "C. Trigilio",
+      "A. Biswas",
+      "P. Leto"
+    ],
+    "position": 11,
+    "n_authors": 16,
+    "year": 2023,
+    "date": "2023-05",
+    "journal": "arXiv",
+    "volume": null,
+    "page": "arXiv:2305.00809",
+    "kind": "preprint",
+    "refereed": false,
+    "category": "coauthor",
+    "citations": 32,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2023arXiv230500809T",
+      "arxiv": "https://arxiv.org/abs/2305.00809",
+      "doi": "https://doi.org/10.48550/arXiv.2305.00809"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2023A&C....4200682R",
+    "title": "Astronomical source detection in radio continuum maps with deep neural networks",
+    "authors": [
+      "S. Riggi",
+      "D. Magro",
+      "R. Sortino"
+    ],
+    "position": 5,
+    "n_authors": 16,
+    "year": 2023,
+    "date": "2023-01",
+    "journal": "Astronomy & Computing",
+    "volume": "42",
+    "page": "100682",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 31,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2023A&C....4200682R",
+      "arxiv": "https://arxiv.org/abs/2212.02538",
+      "doi": "https://doi.org/10.1016/j.ascom.2022.100682"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2023ASSP...60...61B",
+    "title": "Patterns in the Chaos: An Unsupervised View of Galactic Supernova Remnants: Proceedings of the ML4Astro International Conference 30 May - 1 Jun 2022",
+    "authors": [
+      "C. Bordiú",
+      "F. Bufano",
+      "T. Cecconello"
+    ],
+    "position": 1,
+    "n_authors": 6,
+    "year": 2023,
+    "date": "2023",
+    "journal": "Astrophys. Space Sci. Proc.",
+    "volume": "60",
+    "page": "61",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "first",
+    "citations": 1,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2023ASSP...60...61B",
+      "arxiv": null,
+      "doi": "https://doi.org/10.1007/978-3-031-34167-0_13"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2023ASSP...60...57W",
+    "title": "Classification of Evolved Stars with (Unsupervised) Machine Learning: Proceedings of the ML4Astro International Conference 30 May - 1 Jun 2022",
+    "authors": [
+      "J. Welsh",
+      "C. Bordiú",
+      "J. Tan"
+    ],
+    "position": 2,
+    "n_authors": 6,
+    "year": 2023,
+    "date": "2023",
+    "journal": "Astrophys. Space Sci. Proc.",
+    "volume": "60",
+    "page": "57",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "key",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2023ASSP...60...57W",
+      "arxiv": null,
+      "doi": "https://doi.org/10.1007/978-3-031-34167-0_12"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2022ApJ...939L..30B",
+    "title": "First Detection of Silicon-bearing Molecules in η Car",
+    "authors": [
+      "C. Bordiú",
+      "J. R. Rizzo",
+      "F. Bufano"
+    ],
+    "position": 1,
+    "n_authors": 14,
+    "year": 2022,
+    "date": "2022-11",
+    "journal": "ApJL",
+    "volume": "939",
+    "page": "L30",
+    "kind": "article",
+    "refereed": true,
+    "category": "first",
+    "citations": 10,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2022ApJ...939L..30B",
+      "arxiv": "https://arxiv.org/abs/2210.09774",
+      "doi": "https://doi.org/10.3847/2041-8213/ac9b10"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2022MNRAS.515.5523L",
+    "title": "Discovery and origin of the radio emission from the multiple stellar system KQ Vel",
+    "authors": [
+      "P. Leto",
+      "L. M. Oskinova",
+      "C. S. Buemi"
+    ],
+    "position": 12,
+    "n_authors": 23,
+    "year": 2022,
+    "date": "2022-10",
+    "journal": "MNRAS",
+    "volume": "515",
+    "page": "5523",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 5,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.515.5523L",
+      "arxiv": "https://arxiv.org/abs/2207.14075",
+      "doi": "https://doi.org/10.1093/mnras/stac2163"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2022hypa.confE...9B",
+    "title": "A molecular window into the mass loss history of Luminous Blue Variables",
+    "authors": [
+      "C. Bordiú"
+    ],
+    "position": 1,
+    "n_authors": 1,
+    "year": 2022,
+    "date": "2022-09",
+    "journal": "ESO Hypatia Colloquium",
+    "volume": null,
+    "page": "9",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "first",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2022hypa.confE...9B",
+      "arxiv": null,
+      "doi": "https://doi.org/10.5281/zenodo.7104506"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2022eas..conf.1619B",
+    "title": "An unsupervised take on the Galactic Supernova Remnant population",
+    "authors": [
+      "F. Bufano",
+      "C. Bordiú"
+    ],
+    "position": 2,
+    "n_authors": 2,
+    "year": 2022,
+    "date": "2022-07",
+    "journal": "EAS Annual Meeting",
+    "volume": null,
+    "page": "1619",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "key",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2022eas..conf.1619B",
+      "arxiv": null,
+      "doi": null
+    },
+    "orcid": false
+  },
+  {
+    "id": "2022eas..conf.1609B",
+    "title": "The role of the rings: molecular structures around Luminous Blue Variable stars",
+    "authors": [
+      "C. Bordiú"
+    ],
+    "position": 1,
+    "n_authors": 1,
+    "year": 2022,
+    "date": "2022-07",
+    "journal": "EAS Annual Meeting",
+    "volume": null,
+    "page": "1609",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "first",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2022eas..conf.1609B",
+      "arxiv": null,
+      "doi": null
+    },
+    "orcid": false
+  },
+  {
+    "id": "2022ASPC..532..551B",
+    "title": "Astronomical Research in the Next Decade: Trends, Barriers and Needs in Data Access, Management, Visualization and Analysis",
+    "authors": [
+      "C. Bordiú",
+      "F. Bufano",
+      "E. Sciacca"
+    ],
+    "position": 1,
+    "n_authors": 8,
+    "year": 2022,
+    "date": "2022-07",
+    "journal": "ASP Conf. Ser.",
+    "volume": "532",
+    "page": "551",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "first",
+    "citations": 1,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2022ASPC..532..551B",
+      "arxiv": "https://arxiv.org/abs/2012.07686",
+      "doi": null
+    },
+    "orcid": true
+  },
+  {
+    "id": "2022ASPC..532...63S",
+    "title": "Novel EOSC Services for Space Challenges: The NEANIAS First Outcomes",
+    "authors": [
+      "E. Sciacca",
+      "C. Bordiú",
+      "F. Bufano"
+    ],
+    "position": 2,
+    "n_authors": 14,
+    "year": 2022,
+    "date": "2022-07",
+    "journal": "ASP Conf. Ser.",
+    "volume": "532",
+    "page": "63",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "key",
+    "citations": 2,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2022ASPC..532...63S",
+      "arxiv": "https://arxiv.org/abs/2101.07639",
+      "doi": "https://doi.org/10.48550/arXiv.2101.07639"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2022MNRAS.512L..21I",
+    "title": "Evolutionary map of the Universe (EMU): 18-cm OH-maser discovery in ASKAP continuum images of the SCORPIO field",
+    "authors": [
+      "A. Ingallinera",
+      "F. Cavallaro",
+      "S. Loru"
+    ],
+    "position": 8,
+    "n_authors": 22,
+    "year": 2022,
+    "date": "2022-05",
+    "journal": "MNRAS",
+    "volume": "512",
+    "page": "L21",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 5,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.512L..21I",
+      "arxiv": null,
+      "doi": "https://doi.org/10.1093/mnrasl/slac017"
+    },
+    "orcid": true
+  },
+  {
+    "id": "manual-neanias-jogc-2022",
+    "title": "Scientific Visualization on the Cloud: the NEANIAS Services towards EOSC Integration",
+    "authors": [],
+    "position": 99,
+    "n_authors": 0,
+    "year": 2022,
+    "date": "2022",
+    "journal": "Journal of Grid Computing",
+    "volume": null,
+    "page": null,
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": null,
+      "arxiv": null,
+      "doi": null
+    },
+    "orcid": true,
+    "manual": true
+  },
+  {
+    "id": "2021MNRAS.507.1979L",
+    "title": "A scaling relationship for non-thermal radio emission from ordered magnetospheres: from the top of the main sequence to planets",
+    "authors": [
+      "P. Leto",
+      "C. Trigilio",
+      "J. Krtička"
+    ],
+    "position": 11,
+    "n_authors": 23,
+    "year": 2021,
+    "date": "2021-10",
+    "journal": "MNRAS",
+    "volume": "507",
+    "page": "1979",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 59,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.1979L",
+      "arxiv": "https://arxiv.org/abs/2107.11995",
+      "doi": "https://doi.org/10.1093/mnras/stab2168"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2021A&C....3700506R",
+    "title": "Astronomical source finding services for the CIRASA visual analytic platform",
+    "authors": [
+      "S. Riggi",
+      "C. Bordiú",
+      "F. Vitello"
+    ],
+    "position": 2,
+    "n_authors": 14,
+    "year": 2021,
+    "date": "2021-10",
+    "journal": "Astronomy & Computing",
+    "volume": "37",
+    "page": "100506",
+    "kind": "article",
+    "refereed": true,
+    "category": "key",
+    "citations": 5,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2021A&C....3700506R",
+      "arxiv": "https://arxiv.org/abs/2110.08211",
+      "doi": "https://doi.org/10.1016/j.ascom.2021.100506"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2021MNRAS.506.2232U",
+    "title": "A first glimpse at the Galactic plane with the ASKAP: the SCORPIO field",
+    "authors": [
+      "G. Umana",
+      "C. Trigilio",
+      "A. Ingallinera"
+    ],
+    "position": 13,
+    "n_authors": 28,
+    "year": 2021,
+    "date": "2021-09",
+    "journal": "MNRAS",
+    "volume": "506",
+    "page": "2232",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 18,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.506.2232U",
+      "arxiv": null,
+      "doi": "https://doi.org/10.1093/mnras/stab1279"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2021ascl.soft08009R",
+    "title": "caesar-rest: Web service for the caesar source extractor",
+    "authors": [
+      "S. Riggi",
+      "C. Bordiú"
+    ],
+    "position": 2,
+    "n_authors": 2,
+    "year": 2021,
+    "date": "2021-08",
+    "journal": "ASCL",
+    "volume": null,
+    "page": "ascl:2108.009",
+    "kind": "software",
+    "refereed": false,
+    "category": "key",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2021ascl.soft08009R",
+      "arxiv": null,
+      "doi": null
+    },
+    "orcid": false
+  },
+  {
+    "id": "2021MNRAS.502...60R",
+    "title": "Evolutionary map of the Universe (EMU): Compact radio sources in the SCORPIO field towards the galactic plane",
+    "authors": [
+      "S. Riggi",
+      "G. Umana",
+      "C. Trigilio"
+    ],
+    "position": 14,
+    "n_authors": 29,
+    "year": 2021,
+    "date": "2021-03",
+    "journal": "MNRAS",
+    "volume": "502",
+    "page": "60",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 17,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.502...60R",
+      "arxiv": "https://arxiv.org/abs/2101.03843",
+      "doi": "https://doi.org/10.1093/mnras/stab028"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2021MNRAS.500.5500B",
+    "title": "A warm molecular ring in AG Car: composing the mass-loss puzzle",
+    "authors": [
+      "C. Bordiú",
+      "F. Bufano",
+      "L. Cerrigone"
+    ],
+    "position": 1,
+    "n_authors": 12,
+    "year": 2021,
+    "date": "2021-01",
+    "journal": "MNRAS",
+    "volume": "500",
+    "page": "5500",
+    "kind": "article",
+    "refereed": true,
+    "category": "first",
+    "citations": 7,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.500.5500B",
+      "arxiv": "https://arxiv.org/abs/2011.08161",
+      "doi": "https://doi.org/10.1093/mnras/staa3606"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2020SPIE11452E..2VS",
+    "title": "Astrophysics visual analytics services on the European Open Science Cloud",
+    "authors": [
+      "E. Sciacca",
+      "F. Vitello",
+      "S. Riggi"
+    ],
+    "position": 5,
+    "n_authors": 12,
+    "year": 2020,
+    "date": "2020-12",
+    "journal": "Proc. SPIE",
+    "volume": "11452",
+    "page": "114522V",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2020SPIE11452E..2VS",
+      "arxiv": "https://arxiv.org/abs/2007.06222",
+      "doi": "https://doi.org/10.1117/12.2555020"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2020EPJWC.22800023R",
+    "title": "NIKA2 observations around LBV stars Emission from stars and circumstellar material",
+    "authors": [
+      "J. Ricardo Rizzo",
+      "A. Ritacco",
+      "C. Bordiú"
+    ],
+    "position": 3,
+    "n_authors": 3,
+    "year": 2020,
+    "date": "2020-06",
+    "journal": "EPJ Web Conf.",
+    "volume": "228",
+    "page": "00023",
+    "kind": "proceedings",
+    "refereed": true,
+    "category": "key",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2020EPJWC.22800023R",
+      "arxiv": "https://arxiv.org/abs/1909.06089",
+      "doi": "https://doi.org/10.1051/epjconf/202022800023"
+    },
+    "orcid": true
+  },
+  {
+    "id": "manual-neanias-aisc-2020",
+    "title": "Towards Porting Astrophysics Visual Analytics Services in the European Open Science Cloud",
+    "authors": [],
+    "position": 99,
+    "n_authors": 0,
+    "year": 2020,
+    "date": "2020",
+    "journal": "Advances in Intelligent Systems and Computing",
+    "volume": null,
+    "page": null,
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": null,
+      "arxiv": null,
+      "doi": null
+    },
+    "orcid": true,
+    "manual": true
+  },
+  {
+    "id": "2019MNRAS.490.1570B",
+    "title": "The peculiar chemistry of the inner ejecta of Eta Carina",
+    "authors": [
+      "C. Bordiú",
+      "J. R. Rizzo"
+    ],
+    "position": 1,
+    "n_authors": 2,
+    "year": 2019,
+    "date": "2019-12",
+    "journal": "MNRAS",
+    "volume": "490",
+    "page": "1570",
+    "kind": "article",
+    "refereed": true,
+    "category": "first",
+    "citations": 12,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.490.1570B",
+      "arxiv": "https://arxiv.org/abs/1904.00256",
+      "doi": "https://doi.org/10.1093/mnras/stz2621"
+    },
+    "orcid": true
+  },
+  {
+    "id": "2019hsax.conf..400B",
+    "title": "Tracing back the mass loss history of MGE042.0787+00.5084",
+    "authors": [
+      "C. Bordiú",
+      "J. R. Rizzo",
+      "A. Ritacco"
+    ],
+    "position": 1,
+    "n_authors": 3,
+    "year": 2019,
+    "date": "2019-03",
+    "journal": "Highlights of Spanish Astrophysics X",
+    "volume": null,
+    "page": "400",
+    "kind": "proceedings",
+    "refereed": true,
+    "category": "first",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2019hsax.conf..400B",
+      "arxiv": null,
+      "doi": null
+    },
+    "orcid": false
+  },
+  {
+    "id": "2019MNRAS.482.1651B",
+    "title": "A slowly expanding torus associated with the candidate LBV MGE 042.0787+00.5084",
+    "authors": [
+      "C. Bordiú",
+      "J. R. Rizzo",
+      "A. Ritacco"
+    ],
+    "position": 1,
+    "n_authors": 3,
+    "year": 2019,
+    "date": "2019-01",
+    "journal": "MNRAS",
+    "volume": "482",
+    "page": "1651",
+    "kind": "article",
+    "refereed": true,
+    "category": "first",
+    "citations": 6,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.482.1651B",
+      "arxiv": "https://arxiv.org/abs/1810.04897",
+      "doi": "https://doi.org/10.1093/mnras/sty2726"
+    },
+    "orcid": true
+  }
+]

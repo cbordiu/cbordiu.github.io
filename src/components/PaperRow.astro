@@ -1,0 +1,48 @@
+---
+import { authorParts, venue, isRefereedArticle, CATEGORY_LABEL, SELF, type Paper } from "../lib/data";
+interface Props { paper: Paper; showCategory?: boolean }
+const { paper: p, showCategory = true } = Astro.props;
+const { names, more } = authorParts(p);
+const kind = p.kind !== "article" ? p.kind : null;
+---
+<li class="paper" data-cat={p.category} data-ref={isRefereedArticle(p) ? "1" : "0"}>
+  <p class="title">{p.links.ads || p.links.doi
+    ? <a href={p.links.doi ?? p.links.ads}>{p.title}</a>
+    : p.title}</p>
+  {p.authors.length > 0 && <p class="authors">
+    {names.map((n, i) => (
+      <>{i > 0 && ", "}{n.endsWith(SELF) ? <>{n.slice(0, -SELF.length)}<strong>{SELF}</strong></> : n}</>
+    ))}
+    {more > 0 && <span class="muted">{p.position > 3 ? ", …" : " et al."} (+{more})</span>}
+  </p>}
+  <p class="meta mono">
+    <span class="venue">{venue(p)}</span>
+    {kind && <span class="tag">{kind}</span>}
+    {!p.refereed && p.kind === "article" && <span class="tag">non-refereed</span>}
+    {showCategory && <span class={`cat ${p.category}`}>{CATEGORY_LABEL[p.category]}</span>}
+    <span class="links">
+      {p.links.ads && <a href={p.links.ads}>ADS</a>}
+      {p.links.arxiv && <a href={p.links.arxiv}>arXiv</a>}
+      {p.links.doi && <a href={p.links.doi}>DOI</a>}
+      {p.citations > 0 && <span class="cites" title="Citations (NASA ADS)">↗ {p.citations}</span>}
+    </span>
+  </p>
+</li>
+<style>
+  .paper { padding: 1.05rem 0 1.15rem; border-top: 1px solid var(--faint); }
+  .paper p { margin: 0; }
+  .title { font-size: 1.08rem; line-height: 1.35; }
+  .title a { text-decoration: none; }
+  .authors { margin-top: .3rem !important; font-size: .9rem; color: var(--muted); }
+  .authors strong { color: var(--fg); font-weight: 600; }
+  .meta { margin-top: .45rem !important; display: flex; flex-wrap: wrap; gap: .25rem .9rem; color: var(--muted); align-items: baseline; }
+  .venue { font-style: normal; color: var(--fg); opacity: .8; }
+  .tag { text-transform: uppercase; letter-spacing: .1em; font-size: .6rem; }
+  .cat { text-transform: uppercase; letter-spacing: .1em; font-size: .6rem; }
+  .cat.first { color: var(--accent); }
+  .links { display: inline-flex; gap: .7rem; margin-left: auto; }
+  .links a { text-decoration: none; color: var(--muted); }
+  .links a:hover { color: var(--accent); }
+  .cites { color: var(--muted); }
+  @media (max-width: 34rem) { .links { margin-left: 0; } }
+</style>

@@ -1,0 +1,37 @@
+---
+// Small line-drawn symbols for the research lines (currentColor, 28×28).
+interface Props { name: "star" | "ring" | "network" | "dish" }
+const { name } = Astro.props;
+---
+<svg class="sym" viewBox="0 0 28 28" aria-hidden="true">
+  {name === "star" && (
+    <>
+      <path d="M14 2.5 15.6 12.4 25.5 14 15.6 15.6 14 25.5 12.4 15.6 2.5 14 12.4 12.4Z" />
+      <path d="M14 8.5 15 13 19.5 14 15 15 14 19.5 13 15 8.5 14 13 13Z" transform="rotate(45 14 14)" opacity=".5" />
+    </>
+  )}
+  {name === "ring" && (
+    <>
+      <circle cx="14" cy="14" r="9.5" stroke-dasharray="4.2 1.8" />
+      <circle cx="14" cy="14" r="1.1" class="dot" />
+    </>
+  )}
+  {name === "network" && (
+    <>
+      <path d="M5 8.5 14 5M5 8.5 14 14M5 8.5 14 23M5 19.5 14 5M5 19.5 14 14M5 19.5 14 23M14 5 23 14M14 14 23 14M14 23 23 14" opacity=".55" />
+      {[[5, 8.5], [5, 19.5], [14, 5], [14, 14], [14, 23], [23, 14]].map(([x, y]) => <circle cx={x} cy={y} r="2" class="node" />)}
+    </>
+  )}
+  {name === "dish" && (
+    <>
+      <path d="M4 10.5Q9.5 22 22.5 14.5" />
+      <path d="M4 10.5 16 7.5 22.5 14.5M16 7.5 12.8 17.2" opacity=".55" />
+      <path d="M12.8 17.2 12.8 24.5M8.5 24.5H17" />
+    </>
+  )}
+</svg>
+<style>
+  .sym { width: 1.7rem; height: 1.7rem; fill: none; stroke: currentColor; stroke-width: 1.15; stroke-linecap: round; stroke-linejoin: round; overflow: visible; }
+  .sym path:first-child:not([opacity]) { fill: none; }
+  .dot, .node { fill: var(--bg); }
+</style>

@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "refereed": 40,
+    "first_author": 8,
+    "total": 68
+  },
+  "ads": {
+    "citations": 498,
+    "h_index": 12,
+    "i10": 16
+  },
+  "scholar": {
+    "citations": 688,
+    "h_index": 15,
+    "i10": 22,
+    "fetched": "2026-09-24",
+    "via": "manual"
+  },
+  "headline": {
+    "citations": 688,
+    "h_index": 15,
+    "i10": 22,
+    "source": "Google Scholar"
+  }
+}

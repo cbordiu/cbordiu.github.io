@@ -1,0 +1,48 @@
+# Talks and conferences, newest first. Hand-maintained (from the owner's CV, 2026-09-24).
+# kind: oral (default) | invited | poster | selected. month: 3-letter English abbreviation.
+- { year: 2026, month: Sep, kind: oral, event: Swiss SKA Days, place: Neuchâtel,
+    title: "skasim: a research-oriented simulation package for SKA" }
+- { year: 2026, month: Jul, kind: oral, event: European Astronomical Society Annual Meeting, place: Lausanne,
+    title: The molecular fingerprint of early-type supergiants }
+- { year: 2026, month: May, kind: invited, event: INCOSE South Africa, place: online,
+    title: "Delivering MeerKAT+: science via systems engineering" }
+- { year: 2025, month: Nov, kind: oral, event: 5th Italian National Workshop on the SKA Project, place: Bologna,
+    title: "One telescope to find them all: a MeerKAT hunt for radio rings" }
+- { year: 2025, month: Nov, kind: oral, event: RADIOMAP Workshop, place: Cape Town,
+    title: The MeerKAT+ Local Monitoring and Control system }
+- { year: 2024, month: Sep, kind: oral, event: "Rodolfo Barbá: a pioneer in massive star research", place: Madrid,
+    title: The MeerKAT view of evolved massive stars }
+- { year: 2024, month: Jul, kind: oral, event: XV Scientific Meeting of the Spanish Astronomical Society, place: Granada,
+    title: A semi-supervised search for evolved stars with multiwavelength survey data }
+- { year: 2024, month: Jul, kind: oral, event: "ML4Astro 2 — International Conference on Machine Learning for Astrophysics", place: Catania,
+    title: "A “cluster-then-label” scheme for photometric classification of evolved stars" }
+- { year: 2024, month: May, kind: oral, event: "SPARCS XII: Pushing Toward the Final Frontier", place: Bologna,
+    title: Unveiling a hidden population of radio shells with MeerKAT }
+- { year: 2023, month: Nov, kind: invited, event: 4th Italian National Workshop on the SKA Project, place: Catania,
+    title: "Galactic science with SKA and precursors: towards the sharpest view of Our Galaxy" }
+- { year: 2023, month: Jul, kind: oral, event: European Astronomical Society Annual Meeting, place: Kraków,
+    title: The role of Luminous Blue Variables as dust polluters }
+- { year: 2023, month: Jul, kind: oral, event: European Astronomical Society Annual Meeting, place: Kraków,
+    title: "Deep learning in the SKA era: successes, failures and lessons learnt" }
+- { year: 2023, month: Feb, kind: oral, event: Coordinated Surveys of the Southern Sky, place: Garching,
+    title: "Mass loss from evolved massive stars: a multiwavelength view in the SKA era" }
+- { year: 2022, month: Nov, kind: oral, event: SKA Workshop on Visualization Tools, place: online,
+    title: "VisIVO: the Visualization Interface for the Virtual Observatory" }
+- { year: 2022, month: Jul, kind: oral, event: European Astronomical Society Annual Meeting, place: Valencia,
+    title: "The role of the rings: molecular structures around Luminous Blue Variable stars" }
+- { year: 2022, month: Jun, kind: oral, event: "ML4Astro — International Conference on Machine Learning for Astrophysics", place: Catania,
+    title: "Patterns in the chaos? An unsupervised view of Galactic SNRs" }
+- { year: 2022, month: Mar, kind: selected, event: "ESO Hypatia Colloquium: Early Career Astronomers Series", place: online,
+    title: A molecular window into the mass loss history of Luminous Blue Variables }
+- { year: 2021, kind: oral, event: "SOFIA Science Series: Evolved Stars and their Circumstellar Environments", place: online,
+    title: "Molecular gas: the forgotten ingredient of LBV ejecta" }
+- { year: 2021, kind: oral, event: Statistical Methods and Machine Learning in the Space Sciences, place: online,
+    title: Towards a modern unsupervised machine learning approach to the analysis of astrophysical images }
+- { year: 2020, kind: oral, event: Astronomical Data Analysis Software and Systems (ADASS) XXX, place: online,
+    title: "Astronomical research in the next decade: trends, barriers and needs in data access, management, visualization and analysis" }
+- { year: 2020, kind: oral, event: European Astronomical Society Annual Meeting, place: online,
+    title: "A molecular window to the past: mass loss archaeology of very massive stars" }
+- { year: 2020, kind: oral, event: European Astronomical Society Annual Meeting, place: online,
+    title: "NEANIAS: tackling the challenges of future astronomy" }
+- { year: 2018, kind: poster, event: XIII Scientific Meeting of the Spanish Astronomical Society, place: Salamanca,
+    title: Tracing back the mass-loss history of MGE042.0787+00.5084 }

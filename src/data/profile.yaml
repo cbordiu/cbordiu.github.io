@@ -1,0 +1,189 @@
+# Hand-maintained site content (see docs/02-content.md).
+name: Cristóbal Bordiú
+position: Postdoctoral researcher
+institution: Instituto de Astrofísica de Andalucía (IAA-CSIC)
+city: Granada, Spain
+roles: [(Sub)mm & radio astronomer, Software engineer]
+github: https://github.com/cbordiu
+tagline: I study how massive stars shape their surroundings, and build tools for the radio sky of the SKA era.
+photo: /portrait.webp   # 480×480 square crop
+
+# The one sky coordinate on the site: the "pointing" under the hero (ICRS, CDS Sesame).
+sky:
+  hero: { object: η Car, ra: "10h45m03.5s", dec: "−59°41′04″", simbad: "eta Car" }
+
+# *asterisks* mark accented phrases (shown in the accent colour).
+about:
+  - >-
+    I came to astronomy through *engineering*. After a degree in telecommunication engineering and six
+    years writing software at Telefónica, I did a PhD at the Universidad Complutense de Madrid and the
+    Centro de Astrobiología on the *(sub)millimetre view of mass loss* in Luminous Blue Variables.
+  - >-
+    Since then my work has followed two threads. The first is *early-type evolved massive stars*, Luminous
+    Blue Variables and B[e] supergiants, where I trace the *lifecycle of dust and molecules* in their
+    outskirts, mostly with ALMA and single-dish telescopes. The second is the *Galactic radio sky*, as seen
+    by MeerKAT and ASKAP, together with the software needed to make sense of it. I now work at IAA-CSIC on
+    simulations for the *Square Kilometre Array*, within the AMIGA group and the Spanish SKA Regional Centre.
+  - >-
+    Running through both is an interest in how we analyse astronomical data: *deep learning* to find and
+    classify sources in surveys too large to inspect by eye, and, more recently, *large language models* as
+    tools for scientific research itself.
+
+# Research trajectory, oldest first. tier: engineering (dim star) | astronomy (bright) | current (brightest)
+trajectory:
+  - period: "2008 – 2014"
+    role: Telecommunication Engineering
+    place: Universidad de Oviedo
+    logo: oviedo
+    tier: engineering
+  - period: "2014 – 2020"
+    role: Software engineer
+    place: Eleven Paths · Telefónica
+    logo: telefonica
+    tier: engineering
+  - period: "2014 – 2016"
+    role: MSc in Astronomy & Astrophysics
+    place: Universidad Internacional de Valencia
+    logo: viu
+    detail: Keplerian rotation of the TW Hya disk with ALMA
+    tier: astronomy
+  - period: "2016 – 2021"
+    role: PhD in Astrophysics, cum laude
+    place: Universidad Complutense de Madrid · CAB (INTA-CSIC)
+    logo: ucm
+    detail: "Luminous Blue Variable mass loss through a (sub)millimetre lens. Advisor: J. R. Rizzo"
+    tier: astronomy
+  - period: "2020 – 2026"
+    role: PhD researcher, then postdoctoral fellow
+    place: INAF – Osservatorio Astrofisico di Catania
+    logo: inaf
+    detail: "Radio group: MeerKAT and ASKAP Galactic surveys, machine learning, EOSC services"
+    tier: astronomy
+  - period: "2026 –"
+    role: Postdoctoral researcher
+    place: IAA-CSIC, Granada
+    logo: iaa
+    detail: AMIGA group · Spanish SKA Regional Centre (espSRC)
+    tier: current
+
+research:
+  - title: Evolved massive stars and their circumstellar medium
+    symbol: star
+    keywords: [LBVs, "B[e] supergiants", astrochemistry]
+    text: >-
+      Luminous Blue Variables and their relatives lose a large share of their mass in brief, violent episodes.
+      I trace the molecular gas and dust these episodes leave behind, from η Car and AG Car to the B[e]
+      supergiant HD 87643, mainly with ALMA and IRAM, to reconstruct how and when that mass was lost.
+    papers: [2022ApJ...939L..30B, 2026ApJ..1005L..34B, 2021MNRAS.500.5500B]
+  - title: The Galactic radio sky with MeerKAT
+    symbol: ring
+    keywords: [SMGPS, radio rings, source catalogues]
+    text: >-
+      The SARAO MeerKAT Galactic Plane Survey resolves the Milky Way at arcsecond scales. I led its extended
+      source catalogue and search the maps for unusual objects: ghostly thermal rings, compact radio
+      shells, and the remnants of stellar mass loss that only appear at radio wavelengths.
+    papers: [2025A&A...695A.144B, 2024A&A...690A..53B, 2025MNRAS.543.3708B]
+  - title: Deep learning for radio astronomy
+    symbol: network
+    keywords: [unsupervised learning, source detection, diffusion models]
+    text: >-
+      Radio surveys now produce more sources than anyone can inspect by eye. I use machine learning to find
+      structure in them: unsupervised views of the Galactic supernova remnant population, deep-learning source
+      detection in radio maps, diffusion models that generate realistic synthetic images, and semi-supervised
+      classification of evolved stars.
+    papers: [2024A&A...690A.203B, 2024ITAI....5.6524S, 2024PASA...41...85R]
+  - title: Simulating the SKA
+    symbol: dish
+    keywords: [skasim, SKA-Mid, SKA-Low]
+    text: >-
+      At IAA-CSIC I develop skasim, which produces synthetic SKA interferometric observations from a single
+      configuration. It lets researchers test science cases against the real array assemblies before the
+      telescope delivers data.
+    papers: []
+    links: [{ label: skasim on GitHub, url: "https://github.com/espsrc/espsrc_ska_simulator" }]
+
+# Funded projects (from the owner's CV, 2026-09-24).
+projects:
+  pi:
+    - title: "A needle in a haystack: a semi-supervised search for evolved massive stars with multiwavelength survey data and VO tools"
+      funder: INAF Ricerca Fondamentale
+      period: "2022 – 2024"
+      text: >-
+        Semi- and unsupervised learning on optical to mid-infrared photometry, to cluster classes of stars,
+        find outliers and build automated classification schemes.
+    - title: Multiwavelength study of a hidden population of radio shells discovered by MeerKAT
+      funder: INAF Ricerca Fondamentale
+      period: "2024 – 2026"
+      text: >-
+        Characterising a large sample of unclassified radio rings first found in MeerKAT survey data, which may
+        trace a hidden population of evolved massive stars.
+  contributor:
+    - title: "SKA, precursors and MeerKAT+"
+      funder: INAF
+      pi: C. Trigilio
+      period: "2023 – 2026"
+      text: >-
+        Responsible for developing and deploying the Local Monitoring and Control software for the new MeerKAT+
+        dishes, and for the scientific exploitation of MeerKAT data.
+    - title: "Spanish VO: scientific exploitation of astronomical archives"
+      funder: MCIU · PID2023-146210NB-I00
+      pi: E. Solano
+      period: "2024 – 2027"
+      text: >-
+        Work-team researcher on stellar evolution with radio facilities and VO radio tools, and on the discovery
+        of evolved massive stars with machine learning.
+    - title: "CAB contribution to PRIMA: cryogenic instrumentation and multiwavelength science"
+      funder: MCIU · PID2022-137779OB-C41
+      pi: F. Najarro
+      period: "2023 – 2026"
+      text: Work-team member researching mass loss from evolved massive stars with multiwavelength data.
+    - title: H2020 NEANIAS
+      funder: European Commission H2020 · grant 863448
+      pi: M. Roussopoulos
+      period: "2020 – 2022"
+      text: >-
+        "Space Research" work package: machine-learning services for astrophysics in the EOSC, and coordination
+        of dissemination across the project.
+    - title: "CAB contribution to SPICA: cryogenic instrumentation and multiwavelength science"
+      funder: MCIU · PID2019-105552RB-C41
+      pi: F. Najarro
+      period: "2020 – 2023"
+      text: Team member researching mass loss from evolved massive stars.
+
+software:
+  - name: skasim
+    url: https://github.com/espsrc/espsrc_ska_simulator
+    text: Synthetic SKA observations. Wraps Karabo, OSKAR and WSClean behind one configuration model.
+  - name: mufasa
+    url: https://github.com/cbordiu/mufasa
+    text: Multiwavelength Fast SED Assembler. Queries SIMBAD and VizieR, builds SEDs and overlays models.
+  - name: caesar-rest
+    url: https://ascl.net/2108.009
+    text: Web service for the CAESAR source extractor, part of the CIRASA visual analytics platform (ascl:2108.009).
+  - name: NEANIAS services
+    url: https://www.neanias.eu
+    text: Cloud visual-analytics and source-finding services for the European Open Science Cloud (H2020).
+
+# Pinned on the home page, in this order. Images are public outreach images, credited on the tile.
+pinned:
+  - id: 2026ApJ..1005L..34B
+    image: /images/hd87643.webp
+    credit: ESO
+    note: First sulfur oxides around a hot evolved massive star.
+  - id: 2025A&A...695A.144B
+    image: /images/meerkat-gc.webp
+    credit: "I. Heywood, SARAO"
+    note: The extended source catalogue of the SARAO MeerKAT Galactic Plane Survey.
+  - id: 2024A&A...690A..53B
+    image: /images/kyklos-meerkat.webp
+    credit: "MeerKAT L-band · C. Bordiú"
+    note: A ghostly thermal radio ring, likely shed by a Wolf-Rayet star.
+  - id: 2022ApJ...939L..30B
+    image: /images/eta-car.webp
+    credit: "NASA, ESA, N. Smith, J. Morse"
+    note: First Si-bearing molecules in η Car. ALMA Science Highlight, November 2022.
+
+contact:
+  - { label: ORCID, value: 0000-0002-7703-0692, url: "https://orcid.org/0000-0002-7703-0692" }
+  - { label: Google Scholar, value: Cristóbal Bordiú, url: "https://scholar.google.es/citations?user=W18yO88AAAAJ" }
+  - { label: NASA ADS, value: author query, url: "https://ui.adsabs.harvard.edu/search/q=orcid%3A0000-0002-7703-0692&sort=date%20desc" }

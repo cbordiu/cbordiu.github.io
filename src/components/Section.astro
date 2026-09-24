@@ -1,0 +1,32 @@
+---
+interface Props { id: string; label: string; index: string; wide?: boolean }
+const { id, label, index, wide = false } = Astro.props;
+---
+<section id={id} class:list={["section", "wrap", { wide }]} aria-labelledby={`${id}-h`}>
+  <aside class="margin">
+    <div class="pin">
+      <h2 id={`${id}-h`} class="label"><span class="idx">{index}</span>{label}</h2>
+    </div>
+  </aside>
+  <div class="body"><slot /></div>
+</section>
+<style>
+  .section {
+    display: grid;
+    grid-template-columns: var(--margin-col) minmax(0, 1fr);
+    gap: 0 2.5rem;
+    padding-top: 5.5rem;
+    scroll-margin-top: 2rem;
+  }
+  .body { max-width: 40rem; }
+  .wide .body { max-width: none; }
+  .pin { position: sticky; top: 5rem; }
+  h2 { font-weight: 400; margin: .35rem 0 1.4rem; }
+  .idx { color: var(--star); margin-right: .7rem; }
+  @media (max-width: 52rem) {
+    .section { grid-template-columns: 1fr; padding-top: 4rem; }
+    .pin { position: static; display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem;
+      border-bottom: 1px solid var(--faint); margin-bottom: 1.6rem; padding-bottom: .6rem; }
+    h2 { margin: 0; }
+  }
+</style>

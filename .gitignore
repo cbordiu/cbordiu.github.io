@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.astro/
+.env
+__pycache__/
+.DS_Store
+# personal photo kept locally until chosen for the site
+/profile.*

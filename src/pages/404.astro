@@ -1,0 +1,14 @@
+---
+import Base from "../layouts/Base.astro";
+---
+<Base title="Not found">
+  <div class="wrap nf">
+    <p class="label">404 · no source detected</p>
+    <h1>Nothing at these coordinates.</h1>
+    <p class="muted">The page may have moved. Try the <a href="/">home page</a> or the <a href="/publications">publications</a>.</p>
+  </div>
+</Base>
+<style>
+  .nf { padding-top: 8rem; max-width: 40rem; }
+  h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 1rem 0; font-weight: 350; }
+</style>

@@ -1,0 +1,92 @@
+---
+// Research trajectory drawn as a constellation: each position is a star, joined in time order.
+import { profile } from "../lib/data";
+type Stop = { period: string; role: string; place: string; detail?: string; logo?: string; tier: "engineering" | "astronomy" | "current" };
+const stops = profile.trajectory as Stop[];
+// Horizontal star positions (percent of the constellation column): a gentle, hand-tuned zig-zag.
+const X = [52, 66, 44, 60, 40, 56, 46];
+// Newest first; each star is joined to the one below it (the previous step in time).
+const items = [...stops].reverse().map((s, i, a) => ({ ...s, x: X[i % X.length], nx: X[(i + 1) % X.length], last: i === a.length - 1 }));
+---
+<ol class="constellation">
+  {items.map((s) => (
+    <li class={`stop ${s.tier}`} style={`--x:${s.x}%`}>
+      <div class="sky" aria-hidden="true">
+        {!s.last && (
+          <svg class="edge"><line x1={`${s.x}%`} y1="0" x2={`${s.nx}%`} y2="100%" /></svg>
+        )}
+        <svg class="star" viewBox="-10 -10 20 20">
+          <path d="M0 -9 1.4 -1.4 9 0 1.4 1.4 0 9 -1.4 1.4 -9 0 -1.4 -1.4Z" />
+          <circle r="2.2" />
+        </svg>
+      </div>
+      <div class="logo-cell">
+        {s.logo && <span class={`logo ${s.logo}`} role="img" aria-label={s.place} style={`--logo:url(/logos/${s.logo}.png)`} />}
+      </div>
+      <div class="text">
+        <p class="period mono">{s.period}</p>
+        <h3>{s.role}</h3>
+        <p class="place">{s.place}</p>
+        {s.detail && <p class="detail muted">{s.detail}</p>}
+      </div>
+    </li>
+  ))}
+</ol>
+
+<style>
+  .constellation { list-style: none; margin: 0; padding: 0; }
+  .stop {
+    /* Vertical star position: centred on the role title (padding + period line + gap + half the title). */
+    --sy: 3.07rem;
+    position: relative;
+    display: grid; grid-template-columns: 4.5rem 3.6rem 1fr; gap: 0 1.1rem;
+  }
+  .sky { position: relative; }
+  /* Edge from this star (top of row) to the previous-in-time star (top of next row). */
+  .edge {
+    position: absolute; left: 0; width: 100%;
+    top: var(--sy); height: 100%;
+    overflow: visible;
+  }
+  .edge line { stroke: var(--line); stroke-width: 1; vector-effect: non-scaling-stroke; }
+  .star {
+    position: absolute; top: var(--sy); left: var(--x);
+    width: 1.1rem; height: 1.1rem; transform: translate(-50%, -50%);
+    overflow: visible;
+  }
+  .star path { fill: var(--star); opacity: .85; }
+  .star circle { fill: var(--star); }
+  .engineering .star { width: .7rem; height: .7rem; }
+  .engineering .star path { fill: var(--star-dim); opacity: .7; }
+  .engineering .star circle { fill: var(--star-dim); }
+  .current .star { width: 1.6rem; height: 1.6rem; filter: drop-shadow(0 0 6px color-mix(in srgb, var(--star) 70%, transparent)); }
+  .current .star circle { animation: pulse 4s ease-in-out infinite; transform-origin: center; }
+  @keyframes pulse { 50% { opacity: .55; } }
+  @media (prefers-reduced-motion: reduce) { .current .star circle { animation: none; } }
+
+  .text { padding: .5rem 0 2.1rem; }
+  /* Institution logos (between star and text): single-colour masks tinted with the theme ink,
+     all centred on the role title like the stars. */
+  .logo-cell { position: relative; }
+  .logo {
+    position: absolute; left: 0; right: 0; top: var(--sy); transform: translateY(-50%);
+    display: block; height: 2.3rem;
+    background: var(--muted); opacity: .75; transition: opacity .3s ease, background-color .3s ease;
+    -webkit-mask: var(--logo) center / contain no-repeat; mask: var(--logo) center / contain no-repeat;
+  }
+  .logo.iaa { height: 1.7rem; }
+  .logo.telefonica { height: 1.2rem; }
+  .stop:hover .logo { opacity: 1; background: var(--fg); }
+  @media (max-width: 34rem) {
+    .stop { grid-template-columns: 2.6rem 2.6rem 1fr; gap: 0 .8rem; }
+    .logo { height: 1.8rem; }
+    .logo.iaa { height: 1.3rem; }
+    .logo.telefonica { height: .9rem; }
+  }
+  h3 { font-size: 1.22rem; }
+  .place { margin: .15rem 0 0; font-style: italic; }
+  .detail { margin: .3rem 0 0; font-size: .92rem; }
+  .engineering h3, .engineering .place { color: var(--muted); }
+  .current h3 { color: var(--fg); }
+  .current .period { color: var(--accent); }
+</style>

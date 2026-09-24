@@ -1,0 +1,80 @@
+---
+import SpectrumBar from "./SpectrumBar.astro";
+const path = Astro.url.pathname;
+const home = path === "/" ? "" : "/";
+const nav = [
+  { href: `${home}#research`, label: "Research" },
+  { href: "/publications", label: "Publications" },
+  { href: `${home}#talks`, label: "Talks" },
+  { href: `${home}#contact`, label: "Contact" },
+];
+---
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="/" aria-label="Home">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5 11.3 8.7 18.5 10 11.3 11.3 10 18.5 8.7 11.3 1.5 10 8.7 8.7Z" /></svg>
+      <span>C. Bordiú</span>
+    </a>
+    <nav aria-label="Main">
+      {nav.map((n) => (
+        <a href={n.href} aria-current={n.href === path ? "page" : undefined}>{n.label}</a>
+      ))}
+      <button class="theme" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="5.2" />
+          <path class="shade" d="M12 6.8a5.2 5.2 0 0 1 0 10.4Z" />
+        </svg>
+      </button>
+    </nav>
+  </div>
+  {path === "/" && <SpectrumBar />}
+</header>
+
+<script>
+  const btn = document.querySelector<HTMLButtonElement>(".theme");
+  btn?.addEventListener("click", () => {
+    const root = document.documentElement;
+    const dark = root.dataset.theme
+      ? root.dataset.theme === "dark"
+      : matchMedia("(prefers-color-scheme: dark)").matches;
+    const next = dark ? "light" : "dark";
+    root.dataset.theme = next;
+    try { localStorage.setItem("theme", next); } catch (e) {}
+  });
+</script>
+
+<style>
+  .site-header {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--bg) 93%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid color-mix(in srgb, var(--faint) 70%, transparent);
+  }
+  .bar { display: flex; align-items: center; justify-content: space-between; height: 3.4rem; gap: 1rem; }
+  .brand {
+    display: inline-flex; align-items: center; gap: .55rem;
+    text-decoration: none; font-size: 1.05rem; letter-spacing: .01em;
+  }
+  .brand svg { width: .95rem; height: .95rem; fill: var(--star); transition: transform .6s ease; }
+  .brand:hover svg { transform: rotate(45deg); }
+  .brand:hover { color: inherit; }
+  nav { display: flex; align-items: center; gap: clamp(.8rem, 2.4vw, 1.8rem); }
+  nav a {
+    font-family: var(--mono); font-size: .7rem; letter-spacing: .12em; text-transform: uppercase;
+    text-decoration: none; color: var(--muted);
+  }
+  nav a:hover, nav a[aria-current="page"] { color: var(--fg); }
+  .theme {
+    background: none; border: 0; padding: .3rem; cursor: pointer; color: var(--muted);
+    display: inline-flex; border-radius: 50%;
+  }
+  .theme:hover { color: var(--accent); }
+  .theme svg { width: 1.05rem; height: 1.05rem; }
+  .theme circle { fill: none; stroke: currentColor; stroke-width: 1.4; }
+  .theme .shade { fill: currentColor; }
+  @media (max-width: 34rem) {
+    nav a:nth-child(3) { display: none; }
+    .brand span { display: none; }
+  }
+</style>

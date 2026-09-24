@@ -1,0 +1,67 @@
+# Hand-maintained exceptions to the ADS pipeline (see docs/05-data-pipeline.md).
+
+# Google Scholar headline numbers, copied by hand from the profile page. The pipeline uses
+# whichever is newer: this entry or a successful scrape. Update the date when you change it.
+scholar:
+  citations: 688
+  h_index: 15
+  i10: 22
+  date: 2026-09-24
+
+# Force a category: first | key | coauthor
+category: {}
+
+# Bibcodes never shown (errata, duplicates, wrong matches).
+hide: []
+
+# Name-only ADS matches (listed in pending.yaml) that ARE mine / are NOT mine.
+confirmed:
+  # Seeded 2026-09-24: all name-only matches at that date, cross-checked against the owner's CV and research topics.
+  - 2026arXiv260626278T
+  - 2026arXiv260626889I
+  - 2026arXiv260630844C
+  - 2026arXiv260625607B
+  - 2026PASA...43...43F
+  - 2025SerAJ.211...27G
+  - 2025PASA...42..101B
+  - 2024PASA...41...85R
+  - 2024Msngr.193....9B
+  - 2024IAUGA..32P2225R
+  - 2024SPIE13101E..4NB
+  - 2024ASPC..535..191S
+  - 2024ASPC..535...99R
+  - 2024ASPC..535...61C
+  - 2023eas..conf.2021B
+  - 2023eas..conf.2007B
+  - 2023eas..conf.1608R
+  - 2023hsa..conf..292R
+  - 2022eas..conf.1619B
+  - 2022eas..conf.1609B
+  - 2021ascl.soft08009R
+  - 2019hsax.conf..400B
+rejected: []
+
+# Works not in ADS.
+manual:
+  # TODO(owner): author positions of the two NEANIAS works not verified (ORCID only).
+  - id: manual-neanias-jogc-2022
+    title: "Scientific Visualization on the Cloud: the NEANIAS Services towards EOSC Integration"
+    journal: Journal of Grid Computing
+    year: 2022
+    kind: article
+    refereed: true
+    category: coauthor
+  - id: manual-neanias-aisc-2020
+    title: "Towards Porting Astrophysics Visual Analytics Services in the European Open Science Cloud"
+    journal: Advances in Intelligent Systems and Computing
+    year: 2020
+    kind: proceedings
+    refereed: false
+    category: coauthor
+  - id: manual-cluster-then-label-2026
+    title: "A Semi-supervised \"Cluster-then-Label\" Scheme for Photometric Classification of Evolved Stars"
+    journal: Book chapter
+    year: 2026
+    kind: chapter
+    refereed: false
+    category: first  # TODO(owner): author position and venue not yet verified

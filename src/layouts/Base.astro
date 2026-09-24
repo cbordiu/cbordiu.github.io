@@ -1,0 +1,51 @@
+---
+import "@fontsource-variable/newsreader/opsz.css";
+import "@fontsource-variable/newsreader/opsz-italic.css";
+// Greek glyphs (η, α, δ…) come from EB Garamond: Newsreader has no Greek, and system fallbacks can render blanks.
+import "@fontsource/eb-garamond/greek-400.css";
+import "@fontsource/eb-garamond/greek-400-italic.css";
+import "@fontsource/ibm-plex-mono/400.css";
+import "@fontsource/ibm-plex-mono/500.css";
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { profile } from "../lib/data";
+
+interface Props { title?: string; description?: string; }
+const { title, description = `${profile.name} — ${profile.position}, ${profile.institution}. ${profile.tagline}` } = Astro.props;
+const fullTitle = title ? `${title} · ${profile.name}` : `${profile.name} — Astrophysicist`;
+const goat = import.meta.env.PUBLIC_GOATCOUNTER_CODE;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta name="theme-color" content="#fbfaf6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0c1120" media="(prefers-color-scheme: dark)" />
+    <script is:inline>
+      try {
+        const t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+    {goat && <script is:inline async data-goatcounter={`https://${goat}.goatcounter.com/count`} src="//gc.zgo.at/count.js"></script>}
+  </head>
+  <body>
+    <a class="visually-hidden" href="#main">Skip to content</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

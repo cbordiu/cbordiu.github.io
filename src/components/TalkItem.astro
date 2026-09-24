@@ -1,0 +1,28 @@
+---
+import type { Talk } from "../lib/data";
+interface Props { t: Talk }
+const { t } = Astro.props;
+const badge = { invited: "Invited", poster: "Poster", selected: "Selected talk" }[t.kind ?? "oral"];
+---
+<li class="talk">
+  <span class="when mono">{t.month && <span class="m">{t.month}</span>}{t.year}</span>
+  <div>
+    <p class="t">{t.title}{badge && <span class:list={["badge", t.kind]}>{badge}</span>}</p>
+    <p class="e">{t.event}{t.place && <span class="pl"> · {t.place}</span>}</p>
+  </div>
+</li>
+<style>
+  .talk { display: grid; grid-template-columns: 3.9rem 1fr; gap: 1rem; padding: .85rem 0; border-top: 1px solid var(--faint); }
+  .talk p { margin: 0; }
+  .when { color: var(--muted); padding-top: .3rem; display: flex; flex-direction: column; line-height: 1.35; }
+  .m { font-size: .6rem; letter-spacing: .1em; text-transform: uppercase; opacity: .8; }
+  .t { font-size: 1.02rem; line-height: 1.4; }
+  .e { font-size: .9rem; font-style: italic; margin-top: .15rem !important; color: var(--muted); }
+  .badge {
+    display: inline-block; margin-left: .6rem; vertical-align: .15em;
+    font-family: var(--mono); font-size: .58rem; letter-spacing: .12em; text-transform: uppercase;
+    color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    border-radius: 999px; padding: .05rem .5rem;
+  }
+  .badge.poster { color: var(--muted); border-color: var(--line); }
+</style>

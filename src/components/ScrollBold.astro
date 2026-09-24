@@ -1,0 +1,54 @@
+---
+// Paragraphs whose words turn from faint to bold as they cross a line in the viewport.
+// Uses a text stroke rather than font-weight, so the lines never reflow while scrolling.
+interface Props { paragraphs: string[] }
+const { paragraphs } = Astro.props;
+// Split into words, carrying the *accent* state across words; asterisks are removed.
+const tokenise = (p: string) => {
+  let acc = false;
+  return p.split(/(\s+)/).map((w) => {
+    if (/^\s+$/.test(w)) return { space: w };
+    if (w.startsWith("*")) acc = true;
+    const end = w.indexOf("*", w.startsWith("*") ? 1 : 0);
+    // Punctuation after a closing asterisk stays in plain ink.
+    const tok = end >= 0 && acc ? { text: w.slice(0, end).replace(/\*/g, ""), acc: true, tail: w.slice(end + 1) }
+                                : { text: w.replace(/\*/g, ""), acc };
+    if (end >= 0 && (end > 0 || !w.startsWith("*"))) acc = false;
+    return tok;
+  });
+};
+---
+<div class="scroll-bold">
+  {paragraphs.map((p) => (
+    <p>{tokenise(p).map((t: any) => (t.space ?? <span class="w"><span class:list={{ acc: t.acc }}>{t.text}</span>{t.tail}</span>))}</p>
+  ))}
+</div>
+
+<script>
+  const root = document.querySelector<HTMLElement>(".scroll-bold");
+  if (root && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const words = [...root.querySelectorAll<HTMLElement>(".w")];
+    root.classList.add("armed");
+    let ticking = false;
+    const update = () => {
+      const line = innerHeight * 0.66;
+      for (const w of words) w.classList.toggle("on", w.getBoundingClientRect().top < line);
+      ticking = false;
+    };
+    addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    addEventListener("resize", update);
+    update();
+  }
+</script>
+
+<style>
+  .scroll-bold p { font-size: clamp(1.25rem, 2.2vw, 1.55rem); font-weight: 300; line-height: 1.5; margin: 0 0 1.1em; letter-spacing: -.003em; }
+  .armed .w {
+    color: color-mix(in srgb, var(--fg) 28%, var(--bg));
+    -webkit-text-stroke: 0 currentColor;
+    transition: color .45s ease, -webkit-text-stroke-width .45s ease;
+  }
+  .armed .w.on { color: var(--fg); -webkit-text-stroke-width: 0.018em; }
+  .acc, .armed .w.on .acc { color: var(--accent); }
+  .armed .w .acc { color: color-mix(in srgb, var(--accent) 30%, var(--bg)); transition: color .45s ease; }
+</style>

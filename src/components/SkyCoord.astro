@@ -1,0 +1,25 @@
+---
+// Coordinates only, no object name: the SIMBAD link is the reveal.
+import { skyLink, type Sky } from "../lib/data";
+interface Props { sky: Sky; compact?: boolean }
+const { sky, compact = false } = Astro.props;
+const href = skyLink(sky);
+const Tag = href ? "a" : "span";
+const text = sky.geo ?? `α ${sky.ra} δ ${sky.dec}`;
+---
+<Tag class:list={["sky", { compact }]} href={href ?? undefined} target={href ? "_blank" : undefined}
+     rel={href ? "noopener" : undefined} aria-label={href ? `${text} — look up in SIMBAD` : undefined}>
+  <span class="reticle" aria-hidden="true">⌖</span>
+  {sky.geo ? <span class="c">{sky.geo}</span> : <><span class="c">α {sky.ra}</span><span class="c">δ {sky.dec}</span></>}
+</Tag>
+<style>
+  .sky {
+    display: inline-flex; flex-direction: column; gap: .05rem;
+    font-family: var(--mono); font-size: .62rem; line-height: 1.45; letter-spacing: .03em;
+    color: var(--muted); text-decoration: none; opacity: .8;
+  }
+  a.sky:hover { color: var(--accent); opacity: 1; }
+  .reticle { font-size: .8rem; color: var(--star); line-height: 1; margin-bottom: .15rem; }
+  .compact { flex-direction: row; flex-wrap: wrap; gap: .1rem .7rem; align-items: baseline; }
+  .compact .reticle { margin: 0; }
+</style>
