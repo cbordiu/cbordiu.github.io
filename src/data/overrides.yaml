@@ -3,10 +3,10 @@
 # Google Scholar headline numbers, copied by hand from the profile page. The pipeline uses
 # whichever is newer: this entry or a successful scrape. Update the date when you change it.
 scholar:
-  citations: 688
+  citations: 696
   h_index: 15
   i10: 22
-  date: 2026-09-24
+  date: 2026-09-28
 
 # Force a category: first | key | coauthor
 category: {}
