@@ -3,10 +3,10 @@
 # Google Scholar headline numbers, copied by hand from the profile page. The pipeline uses
 # whichever is newer: this entry or a successful scrape. Update the date when you change it.
 scholar:
-  citations: 696
+  citations: 711
   h_index: 15
   i10: 22
-  date: 2026-09-28
+  date: 2026-10-04
 
 # Force a category: first | key | coauthor
 category: {}
@@ -16,6 +16,7 @@ hide: []
 
 # Name-only ADS matches (listed in pending.yaml) that ARE mine / are NOT mine.
 confirmed:
+  - 2026arXiv260939731L
   # Seeded 2026-09-24: all name-only matches at that date, cross-checked against the owner's CV and research topics.
   - 2026arXiv260626278T
   - 2026arXiv260626889I

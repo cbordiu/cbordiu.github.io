@@ -2,7 +2,7 @@
   "counts": {
     "refereed": 40,
     "first_author": 8,
-    "total": 68
+    "total": 69
   },
   "ads": {
     "citations": 498,
@@ -10,14 +10,14 @@
     "i10": 16
   },
   "scholar": {
-    "citations": 696,
+    "citations": 711,
     "h_index": 15,
     "i10": 22,
-    "fetched": "2026-09-28",
+    "fetched": "2026-10-04",
     "via": "manual"
   },
   "headline": {
-    "citations": 696,
+    "citations": 711,
     "h_index": 15,
     "i10": 22,
     "source": "Google Scholar"

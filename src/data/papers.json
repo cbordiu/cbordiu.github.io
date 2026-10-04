@@ -1,5 +1,31 @@
 [
   {
+    "id": "2026arXiv260939731L",
+    "title": "Deep radio characterization of the supernova remnant G343.1-00.7",
+    "authors": [
+      "S. Loru",
+      "A. Ingallinera",
+      "C. Trigilio"
+    ],
+    "position": 7,
+    "n_authors": 22,
+    "year": 2026,
+    "date": "2026-09",
+    "journal": "arXiv",
+    "volume": null,
+    "page": "arXiv:2609.39731",
+    "kind": "preprint",
+    "refereed": false,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026arXiv260939731L",
+      "arxiv": "https://arxiv.org/abs/2609.39731",
+      "doi": "https://doi.org/10.48550/arXiv.2609.39731"
+    },
+    "orcid": false
+  },
+  {
     "id": "2026MNRAS.550g1282L",
     "title": "Determination of kinematic distances of WISE and SMGPS H II regions in the Galactic plane using SEDIGISM cloud association",
     "authors": [
