@@ -1,5 +1,83 @@
 [
   {
+    "id": "2026arXiv261103954B",
+    "title": "A Wolf-Rayet nebula in its disruption phase: high-resolution radio observations of PCG 11",
+    "authors": [
+      "C. S. Buemi",
+      "P. Leto",
+      "F. Cavallaro"
+    ],
+    "position": 5,
+    "n_authors": 15,
+    "year": 2026,
+    "date": "2026-11",
+    "journal": "arXiv",
+    "volume": null,
+    "page": "arXiv:2611.03954",
+    "kind": "preprint",
+    "refereed": false,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026arXiv261103954B",
+      "arxiv": "https://arxiv.org/abs/2611.03954",
+      "doi": "https://doi.org/10.48550/arXiv.2611.03954"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2026arXiv261021851V",
+    "title": "Evolved stars: dust formation and mass loss",
+    "authors": [
+      "L. Velilla-Prieto",
+      "W. Vlemmings",
+      "G. Quintana-Lacaci"
+    ],
+    "position": 7,
+    "n_authors": 21,
+    "year": 2026,
+    "date": "2026-10",
+    "journal": "arXiv",
+    "volume": null,
+    "page": "arXiv:2610.21851",
+    "kind": "preprint",
+    "refereed": false,
+    "category": "coauthor",
+    "citations": 1,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026arXiv261021851V",
+      "arxiv": "https://arxiv.org/abs/2610.21851",
+      "doi": "https://doi.org/10.48550/arXiv.2610.21851"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2026OJAp....972532F",
+    "title": "EMU detection of mysterious multiple component radio-continuum emission from nearby spiral Seyfert I type galaxy `Sand-timer' (NGC 7213)",
+    "authors": [
+      "M. Filipović",
+      "Z. Smeaton",
+      "B. Koribalski"
+    ],
+    "position": 7,
+    "n_authors": 27,
+    "year": 2026,
+    "date": "2026-10",
+    "journal": "The Open Journal of Astrophysics",
+    "volume": "9",
+    "page": "72532",
+    "kind": "article",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026OJAp....972532F",
+      "arxiv": "https://arxiv.org/abs/2610.18285",
+      "doi": "https://doi.org/10.33232/001c.172532"
+    },
+    "orcid": true
+  },
+  {
     "id": "2026arXiv260939731L",
     "title": "Deep radio characterization of the supernova remnant G343.1-00.7",
     "authors": [
@@ -7,8 +85,8 @@
       "A. Ingallinera",
       "C. Trigilio"
     ],
-    "position": 7,
-    "n_authors": 22,
+    "position": 8,
+    "n_authors": 23,
     "year": 2026,
     "date": "2026-09",
     "journal": "arXiv",
@@ -104,110 +182,6 @@
     "orcid": true
   },
   {
-    "id": "2026arXiv260630844C",
-    "title": "Coherent and Incoherent Emission from the Ordered Magnetospheres of Low-Mass Stars, UCDs, and Massive Stars",
-    "authors": [
-      "F. Cavallaro",
-      "P. Leto",
-      "B. Das"
-    ],
-    "position": 6,
-    "n_authors": 18,
-    "year": 2026,
-    "date": "2026-06",
-    "journal": "arXiv",
-    "volume": null,
-    "page": "arXiv:2606.30844",
-    "kind": "preprint",
-    "refereed": false,
-    "category": "coauthor",
-    "citations": 0,
-    "links": {
-      "ads": "https://ui.adsabs.harvard.edu/abs/2026arXiv260630844C",
-      "arxiv": "https://arxiv.org/abs/2606.30844",
-      "doi": "https://doi.org/10.48550/arXiv.2606.30844"
-    },
-    "orcid": false
-  },
-  {
-    "id": "2026arXiv260626889I",
-    "title": "Supernova remnants in the new radio astronomy era",
-    "authors": [
-      "A. Ingallinera",
-      "M. Arias",
-      "G. Castelletti"
-    ],
-    "position": 4,
-    "n_authors": 28,
-    "year": 2026,
-    "date": "2026-06",
-    "journal": "arXiv",
-    "volume": null,
-    "page": "arXiv:2606.26889",
-    "kind": "preprint",
-    "refereed": false,
-    "category": "coauthor",
-    "citations": 0,
-    "links": {
-      "ads": "https://ui.adsabs.harvard.edu/abs/2026arXiv260626889I",
-      "arxiv": "https://arxiv.org/abs/2606.26889",
-      "doi": "https://doi.org/10.48550/arXiv.2606.26889"
-    },
-    "orcid": false
-  },
-  {
-    "id": "2026arXiv260626278T",
-    "title": "The 10-15 GHz radio continuum survey of the Galactic Plane with SKAO",
-    "authors": [
-      "A. Traficante",
-      "C. Mininni",
-      "F. Cavallaro"
-    ],
-    "position": 9,
-    "n_authors": 66,
-    "year": 2026,
-    "date": "2026-06",
-    "journal": "arXiv",
-    "volume": null,
-    "page": "arXiv:2606.26278",
-    "kind": "preprint",
-    "refereed": false,
-    "category": "coauthor",
-    "citations": 1,
-    "links": {
-      "ads": "https://ui.adsabs.harvard.edu/abs/2026arXiv260626278T",
-      "arxiv": "https://arxiv.org/abs/2606.26278",
-      "doi": "https://doi.org/10.48550/arXiv.2606.26278"
-    },
-    "orcid": false
-  },
-  {
-    "id": "2026arXiv260625607B",
-    "title": "Evolved massive stars and their impact on their environment",
-    "authors": [
-      "C. S. Buemi",
-      "G. Umana",
-      "C. Trigilio"
-    ],
-    "position": 4,
-    "n_authors": 18,
-    "year": 2026,
-    "date": "2026-06",
-    "journal": "arXiv",
-    "volume": null,
-    "page": "arXiv:2606.25607",
-    "kind": "preprint",
-    "refereed": false,
-    "category": "coauthor",
-    "citations": 0,
-    "links": {
-      "ads": "https://ui.adsabs.harvard.edu/abs/2026arXiv260625607B",
-      "arxiv": "https://arxiv.org/abs/2606.25607",
-      "doi": "https://doi.org/10.48550/arXiv.2606.25607"
-    },
-    "orcid": false
-  },
-  {
     "id": "2026PASA...43...43F",
     "title": "ASKAP EMU detection of an Odd Radio Circle (ORC) candidate: J094412─751016 (Anglerfish)",
     "authors": [
@@ -225,7 +199,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 0,
+    "citations": 2,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2026PASA...43...43F",
       "arxiv": "https://arxiv.org/abs/2603.21467",
@@ -251,7 +225,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 5,
+    "citations": 7,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.546f1849M",
       "arxiv": "https://arxiv.org/abs/2510.23707",
@@ -277,7 +251,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 2,
+    "citations": 4,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2026A&A...706A.241L",
       "arxiv": "https://arxiv.org/abs/2511.05378",
@@ -307,6 +281,136 @@
     },
     "orcid": true,
     "manual": true
+  },
+  {
+    "id": "2026aask.bookE..48I",
+    "title": "Supernova Remnants in the New Radio Astronomy Era",
+    "authors": [
+      "A. Ingallinera",
+      "M. Arias",
+      "G. Castelletti"
+    ],
+    "position": 4,
+    "n_authors": 28,
+    "year": 2026,
+    "date": "2026",
+    "journal": "Advancing Astrophysics with the SKA I",
+    "volume": null,
+    "page": "48",
+    "kind": "chapter",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026aask.bookE..48I",
+      "arxiv": "https://arxiv.org/abs/2606.26889",
+      "doi": "https://doi.org/10.48550/arXiv.2606.26889"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2026aask.bookE..47B",
+    "title": "Evolved Massive Stars and their Impact on their Environment",
+    "authors": [
+      "C. S. Buemi",
+      "G. Umana",
+      "C. Trigilio"
+    ],
+    "position": 4,
+    "n_authors": 18,
+    "year": 2026,
+    "date": "2026",
+    "journal": "Advancing Astrophysics with the SKA I",
+    "volume": null,
+    "page": "47",
+    "kind": "chapter",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026aask.bookE..47B",
+      "arxiv": "https://arxiv.org/abs/2606.25607",
+      "doi": "https://doi.org/10.48550/arXiv.2606.25607"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2026aask.bookE..46C",
+    "title": "Coherent and Incoherent Emission from the Ordered Magnetospheres of Low-Mass Stars, UCDs, and Massive Stars",
+    "authors": [
+      "F. Cavallaro",
+      "P. Leto",
+      "B. Das"
+    ],
+    "position": 6,
+    "n_authors": 18,
+    "year": 2026,
+    "date": "2026",
+    "journal": "Advancing Astrophysics with the SKA I",
+    "volume": null,
+    "page": "46",
+    "kind": "chapter",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026aask.bookE..46C",
+      "arxiv": "https://arxiv.org/abs/2606.30844",
+      "doi": "https://doi.org/10.48550/arXiv.2606.30844"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2026aask.bookE..35T",
+    "title": "The 10-15 GHz Radio Continuum Survey of the Galactic Plane with SKAO",
+    "authors": [
+      "A. Traficante",
+      "C. Mininni",
+      "F. Cavallaro"
+    ],
+    "position": 9,
+    "n_authors": 66,
+    "year": 2026,
+    "date": "2026",
+    "journal": "Advancing Astrophysics with the SKA I",
+    "volume": null,
+    "page": "35",
+    "kind": "chapter",
+    "refereed": true,
+    "category": "coauthor",
+    "citations": 1,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026aask.bookE..35T",
+      "arxiv": "https://arxiv.org/abs/2606.26278",
+      "doi": "https://doi.org/10.48550/arXiv.2606.26278"
+    },
+    "orcid": false
+  },
+  {
+    "id": "2026ASSP...62....7B",
+    "title": "A Semi-supervised \"Cluster-then-Label\" Scheme for Photometric Classification of Evolved Stars",
+    "authors": [
+      "C. Bordiú",
+      "F. Bufano",
+      "J. R. Rizzo"
+    ],
+    "position": 1,
+    "n_authors": 6,
+    "year": 2026,
+    "date": "2026",
+    "journal": "Astrophys. Space Sci. Proc.",
+    "volume": "62",
+    "page": "7",
+    "kind": "proceedings",
+    "refereed": false,
+    "category": "first",
+    "citations": 0,
+    "links": {
+      "ads": "https://ui.adsabs.harvard.edu/abs/2026ASSP...62....7B",
+      "arxiv": null,
+      "doi": "https://doi.org/10.1007/978-3-032-02232-5_2"
+    },
+    "orcid": true
   },
   {
     "id": "2025SerAJ.211...27G",
@@ -352,7 +456,7 @@
     "kind": "article",
     "refereed": true,
     "category": "first",
-    "citations": 1,
+    "citations": 2,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2025MNRAS.543.3708B",
       "arxiv": "https://arxiv.org/abs/2509.20289",
@@ -404,7 +508,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 0,
+    "citations": 2,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2025A&A...701A.211L",
       "arxiv": "https://arxiv.org/abs/2509.15712",
@@ -430,7 +534,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 14,
+    "citations": 16,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2025PASA...42..104F",
       "arxiv": "https://arxiv.org/abs/2505.04041",
@@ -482,7 +586,7 @@
     "kind": "article",
     "refereed": true,
     "category": "first",
-    "citations": 11,
+    "citations": 14,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2025A&A...695A.144B",
       "arxiv": "https://arxiv.org/abs/2502.15640",
@@ -534,7 +638,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 21,
+    "citations": 29,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2025A&A...693A.247A",
       "arxiv": "https://arxiv.org/abs/2409.16607",
@@ -586,7 +690,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 6,
+    "citations": 8,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2024A&A...692A.193L",
       "arxiv": null,
@@ -612,7 +716,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 12,
+    "citations": 14,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2024PASA...41...85R",
       "arxiv": "https://arxiv.org/abs/2404.18462",
@@ -638,7 +742,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 18,
+    "citations": 20,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.534.2918S",
       "arxiv": null,
@@ -664,7 +768,7 @@
     "kind": "article",
     "refereed": true,
     "category": "key",
-    "citations": 1,
+    "citations": 2,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2024A&A...690A.203B",
       "arxiv": "https://arxiv.org/abs/2409.06383",
@@ -793,7 +897,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 98,
+    "citations": 118,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.531..649G",
       "arxiv": "https://arxiv.org/abs/2312.07275",
@@ -949,7 +1053,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 1,
+    "citations": 2,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2024ITAI....5.6524S",
       "arxiv": "https://arxiv.org/abs/2307.02392",
@@ -1027,7 +1131,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 17,
+    "citations": 18,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2023ExA....56..293S",
       "arxiv": "https://arxiv.org/abs/2303.04506",
@@ -1154,7 +1258,7 @@
     "kind": "preprint",
     "refereed": false,
     "category": "coauthor",
-    "citations": 32,
+    "citations": 33,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2023arXiv230500809T",
       "arxiv": "https://arxiv.org/abs/2305.00809",
@@ -1180,7 +1284,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 31,
+    "citations": 32,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2023A&C....4200682R",
       "arxiv": "https://arxiv.org/abs/2212.02538",
@@ -1435,7 +1539,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 5,
+    "citations": 6,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.512L..21I",
       "arxiv": null,
@@ -1484,7 +1588,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 59,
+    "citations": 63,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.1979L",
       "arxiv": "https://arxiv.org/abs/2107.11995",
@@ -1536,7 +1640,7 @@
     "kind": "article",
     "refereed": true,
     "category": "coauthor",
-    "citations": 18,
+    "citations": 19,
     "links": {
       "ads": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.506.2232U",
       "arxiv": null,

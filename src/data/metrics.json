@@ -1,23 +1,23 @@
 {
   "counts": {
-    "refereed": 40,
+    "refereed": 41,
     "first_author": 8,
-    "total": 69
+    "total": 73
   },
   "ads": {
-    "citations": 498,
-    "h_index": 12,
+    "citations": 558,
+    "h_index": 14,
     "i10": 16
   },
   "scholar": {
-    "citations": 711,
+    "citations": 733,
     "h_index": 15,
     "i10": 22,
-    "fetched": "2026-10-04",
+    "fetched": "2026-11-12",
     "via": "manual"
   },
   "headline": {
-    "citations": 711,
+    "citations": 733,
     "h_index": 15,
     "i10": 22,
     "source": "Google Scholar"

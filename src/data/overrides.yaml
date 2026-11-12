@@ -3,10 +3,10 @@
 # Google Scholar headline numbers, copied by hand from the profile page. The pipeline uses
 # whichever is newer: this entry or a successful scrape. Update the date when you change it.
 scholar:
-  citations: 711
+  citations: 733
   h_index: 15
   i10: 22
-  date: 2026-10-04
+  date: 2026-11-12
 
 # Force a category: first | key | coauthor
 category: {}
@@ -22,6 +22,13 @@ confirmed:
   - 2026arXiv260626889I
   - 2026arXiv260630844C
   - 2026arXiv260625607B
+  # 2026-11-12: published versions of the four SKA science-book chapters confirmed above as arXiv preprints.
+  - 2026aask.bookE..35T
+  - 2026aask.bookE..46C
+  - 2026aask.bookE..47B
+  - 2026aask.bookE..48I
+  - 2026arXiv261103954B
+  - 2026arXiv261021851V
   - 2026PASA...43...43F
   - 2025SerAJ.211...27G
   - 2025PASA...42..101B
