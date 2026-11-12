@@ -29,7 +29,9 @@ about:
     Since then my work has followed two threads. The first is *early-type evolved massive stars*, Luminous
     Blue Variables and B[e] supergiants, where I trace the *lifecycle of dust and molecules* in their
     outskirts, mostly with ALMA and single-dish telescopes. The second is the *Galactic radio sky*, as seen
-    by MeerKAT and ASKAP, together with the software needed to make sense of it.
+    by MeerKAT and ASKAP, where I search for peculiar sources, such as radio rings and shells, that trace
+    the *mass loss of evolved massive stars* and may reveal members of the class that are hidden at other
+    wavelengths.
   - >-
     At IAA-CSIC, within the AMIGA group and the Spanish SKA Regional Centre (espSRC), I combine observations,
     simulations and software. I develop *skasim*, which produces synthetic SKA observations so that

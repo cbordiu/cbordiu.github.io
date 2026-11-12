@@ -166,7 +166,7 @@ const TALKS_SHOWN = 6;
           <span class="year mono">{t.year}</span>
           <div>
             <p class="t">{t.url ? <a href={t.url}>{t.title}</a> : t.title}</p>
-            <p class="e muted">{t.outlet}</p>
+            <p class="e muted">{t.outlet}{(t.links ?? []).map((l) => <> · <a href={l.url}>{l.label}</a></>)}</p>
           </div>
         </li>
       ))}

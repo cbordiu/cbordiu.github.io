@@ -1,14 +1,21 @@
-# Outreach and press, newest first. Hand-maintained. TODO(owner): add links and missing items (Phys.org, CAB).
+# Outreach and press, newest first. Hand-maintained. Optional `links` adds extra
+# linked sources after the outlet. TODO(owner): add missing items (Phys.org).
 - year: 2026
   title: Dove non ci si aspettava molecole — first sulfur oxides around the B[e] supergiant HD 87643
   outlet: MediaINAF press release
+  url: https://www.media.inaf.it/2026/07/02/ossidi-di-zolfo-nellambiente-circumstellare-di-una-supergigante/
 - year: 2024
   title: Odd radio circle spotted by MeerKAT may be a star losing its layers
   outlet: Space.com
   url: https://www.space.com/odd-radio-circles-meerkat-observatory-star-losing-layers
 - year: 2022
   title: ALMA Science Highlight — first silicon-bearing molecules in η Car
-  outlet: ALMA European newsletter · press releases by CAB and MediaINAF
+  outlet: ALMA European newsletter
+  url: https://www.eso.org/sci/facilities/alma/news/arc-newsletter/2022nov.html
+  links:
+    - { label: CAB press release, url: "https://cab.inta-csic.es/noticias/primera-deteccion-de-moleculas-con-silicio-y-azufre-en-eta-carina-una-potente-estrella-de-gran-masa-a-punto-de-explotar-como-supernova/22/" }
+    - { label: MediaINAF press release, url: "https://www.media.inaf.it/2022/11/14/silicio-eta-carinae/" }
 - year: 2019
-  title: First resolved ALMA images of the molecular ring around η Carinae
+  title: Two new molecular structures linked to the last great eruption of η Car, found with ALMA
   outlet: CAB press release
+  url: https://cab.inta-csic.es/wp-content/uploads/2020/08/20191018130143.pdf

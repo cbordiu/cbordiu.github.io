@@ -51,7 +51,7 @@ export const starfield = starfieldJson as { stars: { x: number; y: number; v: nu
 export const profile = nbDeep(parse(profileRaw));
 export interface Talk { year: number; month?: string; title: string; event: string; place?: string; kind?: "oral" | "invited" | "poster" | "selected" }
 export const talks = nbDeep(parse(talksRaw)) as Talk[];
-export const press = nbDeep(parse(pressRaw)) as { year: number; title: string; outlet: string; url?: string }[];
+export const press = nbDeep(parse(pressRaw)) as { year: number; title: string; outlet: string; url?: string; links?: { label: string; url: string }[] }[];
 
 export const paperById = (id: string) => papers.find((p) => p.id === id);
 
