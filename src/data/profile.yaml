@@ -15,19 +15,32 @@ sky:
 # *asterisks* mark accented phrases (shown in the accent colour).
 about:
   - >-
-    I came to astronomy through *engineering*. After a degree in telecommunication engineering and six
-    years writing software at Telefónica, I did a PhD at the Universidad Complutense de Madrid and the
-    Centro de Astrobiología on the *(sub)millimetre view of mass loss* in Luminous Blue Variables.
+    I am a radio and (sub)millimetre astronomer at IAA-CSIC, in Granada. I study how *evolved massive stars*
+    shape their surroundings, and I help prepare the tools that astronomers will use to observe with the
+    *Square Kilometre Array*.
+  - >-
+    I came to astronomy through *engineering*. After a degree in telecommunications I spent six years as a
+    software developer at ElevenPaths, Telefónica's cybersecurity unit, where I learned to design, test and
+    maintain software that other people depend on. That experience shapes how I build research software
+    today. My PhD, at the Universidad Complutense de Madrid and the Centro de Astrobiología, showed that
+    Luminous Blue Variables keep a *molecular record of their past eruptions*, and that this molecular gas
+    accounts for a substantial fraction of their mass loss.
   - >-
     Since then my work has followed two threads. The first is *early-type evolved massive stars*, Luminous
     Blue Variables and B[e] supergiants, where I trace the *lifecycle of dust and molecules* in their
     outskirts, mostly with ALMA and single-dish telescopes. The second is the *Galactic radio sky*, as seen
-    by MeerKAT and ASKAP, together with the software needed to make sense of it. I now work at IAA-CSIC on
-    simulations for the *Square Kilometre Array*, within the AMIGA group and the Spanish SKA Regional Centre.
+    by MeerKAT and ASKAP, together with the software needed to make sense of it.
   - >-
-    Running through both is an interest in how we analyse astronomical data: *deep learning* to find and
-    classify sources in surveys too large to inspect by eye, and, more recently, *large language models* as
-    tools for scientific research itself.
+    At IAA-CSIC, within the AMIGA group and the Spanish SKA Regional Centre (espSRC), I combine observations,
+    simulations and software. I develop *skasim*, which produces synthetic SKA observations so that
+    researchers can test their science cases against the real array before it delivers data, and I work to
+    make interferometry and the SKA tools accessible to the *whole community*, including astronomers with no
+    background in radio.
+  - >-
+    Running through all of this is an interest in how we analyse astronomical data: *deep learning* to find
+    and classify sources in surveys too large to inspect by eye, and, more recently, *large language models*
+    as tools for research itself. I co-organise the *ML4Astro* conference series and hands-on training
+    events on these methods.
 
 # Research trajectory, oldest first. tier: engineering (dim star) | astronomy (bright) | current (brightest)
 trajectory:
@@ -149,6 +162,20 @@ projects:
       pi: F. Najarro
       period: "2020 – 2023"
       text: Team member researching mass loss from evolved massive stars.
+
+# Consortia and collaborations the owner is a member of. role/url optional.
+collaborations:
+  - name: EMU
+    full: Evolutionary Map of the Universe
+    text: The ASKAP continuum survey of the southern sky.
+    url: https://emu-survey.org
+  - name: SKA Our Galaxy
+    full: SKAO Science Working Group
+    text: Galactic science with the SKA telescopes.
+    url: https://www.skao.int/en/science-users/118/ska-science-working-groups
+  - name: ALMA2040
+    full: ALMA2040
+    text: ""
 
 software:
   - name: skasim

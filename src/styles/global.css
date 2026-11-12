@@ -1,21 +1,21 @@
 /* Design tokens: see docs/03-visual-design.md. Retune the palette here only. */
 :root {
-  --bg: #fbfaf6;
-  --bg-raised: #f4f2ec;
-  --fg: #1b1c20;
-  --muted: #62656d;
-  --faint: #dcd8ce;
-  --line: #c9c4b8;
-  --accent: #97651c;        /* muted amber, AA on --bg */
-  --accent-soft: #b8843a;
-  --star: #b5832f;
-  --star-dim: #a39a88;
-  --field-star: #1f2640;
-  --field-opacity: 0.62;
-  --star-hot: #1f2a52;
-  --star-cool: #3a2c1e;
+  --bg: #f5f6f8;
+  --bg-raised: #eceef2;
+  --fg: #161b26;
+  --muted: #596070;
+  --faint: #dde1e8;
+  --line: #c3c9d4;
+  --accent: #1f3a68; /* navy, AA on --bg */
+  --accent-soft: #3b5786;
+  --star: #1f3a68;
+  --star-dim: #8e96a5;
+  --field-star: #1c2436;
+  --field-opacity: 0.4;
+  --star-hot: #1f3a68;
+  --star-cool: #2f3644;
   --halo: 0;
-  --gold: #c08a24;
+  --gold: #2a4a80;
   --figure-filter: none;
 
   --serif: "Newsreader Variable", "Newsreader", "EB Garamond", Georgia, serif;
@@ -29,43 +29,43 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0c1120;
-    --bg-raised: #121a2c;
-    --fg: #e7e3d9;
-    --muted: #979eae;
-    --faint: #1f2840;
-    --line: #2d3852;
-    --accent: #e2b467;
-    --accent-soft: #c9994d;
-    --star: #f0c77c;
-    --star-dim: #7d8599;
-    --field-star: #f3eee0;
-    --field-opacity: 0.9;
-    --star-hot: #c9d8ff;
-    --star-cool: #ffd9a8;
+    --bg: #0d1118;
+    --bg-raised: #141a24;
+    --fg: #e5e8ee;
+    --muted: #98a1b2;
+    --faint: #1e2633;
+    --line: #2c3646;
+    --accent: #94b3e3;
+    --accent-soft: #7396cc;
+    --star: #b4c6e6;
+    --star-dim: #76808f;
+    --field-star: #eef1f6;
+    --field-opacity: 0.65;
+    --star-hot: #cddbff;
+    --star-cool: #e3e7ef;
     --halo: 1;
-    --gold: #f4c55f;
+    --gold: #a9c3ee;
     --figure-filter: brightness(0.88) contrast(1.02);
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0c1120;
-  --bg-raised: #121a2c;
-  --fg: #e7e3d9;
-  --muted: #979eae;
-  --faint: #1f2840;
-  --line: #2d3852;
-  --accent: #e2b467;
-  --accent-soft: #c9994d;
-  --star: #f0c77c;
-  --star-dim: #7d8599;
-  --field-star: #f3eee0;
-  --field-opacity: 0.9;
-  --star-hot: #c9d8ff;
-  --star-cool: #ffd9a8;
+  --bg: #0d1118;
+  --bg-raised: #141a24;
+  --fg: #e5e8ee;
+  --muted: #98a1b2;
+  --faint: #1e2633;
+  --line: #2c3646;
+  --accent: #94b3e3;
+  --accent-soft: #7396cc;
+  --star: #b4c6e6;
+  --star-dim: #76808f;
+  --field-star: #eef1f6;
+  --field-opacity: 0.65;
+  --star-hot: #cddbff;
+  --star-cool: #e3e7ef;
   --halo: 1;
-  --gold: #f4c55f;
+  --gold: #a9c3ee;
   --figure-filter: brightness(0.88) contrast(1.02);
   color-scheme: dark;
 }

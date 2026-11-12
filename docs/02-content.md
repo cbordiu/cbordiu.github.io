@@ -16,7 +16,7 @@
 ## Hero
 
 - A roles line above the name: **(Sub)mm & radio astronomer / Software engineer** (`roles` in `profile.yaml`).
-- Name (surname in gold), then the position line "Postdoctoral researcher · IAA-CSIC, Granada", then the tagline:
+- Name (surname in the accent colour), then the position line "Postdoctoral researcher · IAA-CSIC, Granada", then the tagline:
   > I study how massive stars shape their surroundings, and build tools for the radio sky of the SKA era.
 - **Portrait**: `public/portrait.webp`, a 480×480 square crop of the owner's photo, shown as a circle.
 - The faint Carina starfield sits behind the hero (see [03](03-visual-design.md)).
@@ -24,7 +24,11 @@
 
 ## About
 
-- Three paragraphs, set large at a light weight (300):
+- Rewritten 2026-11-12 after a collaborator's review: five paragraphs. The first says plainly who the owner is now; then the
+  engineering → PhD story, each step with an outcome (what Telefónica taught; the PhD's main result); the two threads with a
+  concrete science point each; the IAA/espSRC role (observations, simulations, software, community access to SKA tools);
+  and the ML/LLM interest plus ML4Astro and training events. The list below is the earlier three-paragraph version.
+- Earlier version: three paragraphs, set large at a light weight (300):
   1. The "engineer turned astrophysicist" story.
   2. Two research threads. Revised 2026-09-24 to name the focus: early-type evolved massive stars (LBVs, B[e] supergiants)
      and the lifecycle of dust and molecules in their outskirts. The second thread is the Galactic radio sky and the software for it, plus the current IAA role.
@@ -37,18 +41,18 @@
   coloured as they cross a line at 66% of the viewport height. The bolding is a text stroke rather than a font-weight change, so the lines never reflow.
   Without JavaScript, or with reduced motion, the text is simply shown normally.
 
-## Research trajectory (the constellation)
+## Research trajectory (timeline)
 
 - **Decision**: the full path is shown, framed as the engineer → astrophysicist arc.
 - **Why**: it is distinctive, and it explains the software/SKA side of the profile.
-- The engineering years are drawn as dimmer stars, the astronomy years as brighter ones.
-- **Institution logos** (added 2026-09-24) sit in their own column **between the star and the text**, centred on the role
-  title like the stars. They are IAA-CSIC (the oval "IAA" mark only), INAF, UCM, VIU, Telefónica and Universidad de Oviedo (its coat of arms).
+- Redesigned 2026-11-12 (`Timeline.astro`, replacing the zig-zag constellation): a CV-style vertical timeline with dates
+  right-aligned on the left, one hairline with a node per position, then the text and a logo column on the right.
+  Nodes: current = filled accent dot with a ring; astronomy = filled; engineering = hollow, with greyed titles.
+  On phones the date moves above the role title.
+- **Institution logos** (added 2026-09-24) sit in their own column to the right of the text (moved 2026-11-12). They are IAA-CSIC (the oval "IAA" mark only), INAF, UCM, VIU, Telefónica and Universidad de Oviedo (its coat of arms).
   Each is a single-colour alpha mask in `public/logos/*.png`, tinted with the theme's muted ink through CSS `mask`, and turns
   full ink on row hover. Sources: the IAA logo from iaa.csic.es (the IAA mark only); INAF, the UCM coat of arms, VIU and
   Telefónica and Oviedo from Wikimedia Commons. They are used only to identify affiliations.
-- Each star is vertically centred on its role title (`--sy` in `Constellation.astro`), and they follow a gentle zig-zag
-  (40–66 % of the star column). Tightened 2026-09-24.
 
 | Period | Role | Where |
 |---|---|---|
@@ -96,9 +100,8 @@ Only software the owner leads is listed; collaborations on other people's projec
 
 ## Pinned papers (home page)
 
-- **Latest publication** (added 2026-09-24): a card above the posters shows the newest refereed article of any role,
-  taken from `papers.json`, so it updates automatically with the ADS pipeline. It shows the month and year, title,
-  short authors and venue, with a pulsing gold beacon; the animation is off with reduced motion.
+- The "Latest publication" card was removed on 2026-11-12: the newest paper is not always one to highlight.
+- On 2026-11-12 the section moved to 04, straight after Research. The cards keep the earlier design below.
 
 Revised 2026-09-24: shown as four portrait "posters" in a 4×1 row. Each has a public outreach image of the object,
 with the year, journal and title over a dark gradient; a one-line note and the credit appear on hover.
@@ -131,7 +134,10 @@ own MeerKAT image, cropped to 3:4 around the ring. The images are in `public/ima
   PI projects get a gold ✦ and an amber period.
   - PI: two INAF Ricerca Fondamentale grants (2022–2024 evolved-star ML search; 2024–2026 MeerKAT radio shells).
   - Contributor: SKA precursors and MeerKAT+ (INAF, 2023–2026), Spanish VO, CAB–PRIMA, H2020 NEANIAS, CAB–SPICA.
-- Section order: 01 About, 02 Trajectory, 03 Research, 04 Software, 05 Projects, 06 Selected papers (also the Publications page),
+- A third group, **Consortia & collaborations** (added 2026-10-29), lists memberships from `collaborations` in `profile.yaml`:
+  short name (linked when a `url` is given) in the left column, then the full name, an optional `role` and an optional one-line `text`.
+  Currently EMU, SKA Our Galaxy SWG and ALMA2040.
+- Section order (2026-11-12): 01 About, 02 Trajectory, 03 Research, 04 Selected papers (also the Publications page), 05 Software, 06 Projects,
   07 Talks, 08 Press, 09 Contact.
 
 ## Outreach and press

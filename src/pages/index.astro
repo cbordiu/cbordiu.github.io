@@ -2,12 +2,12 @@
 import Base from "../layouts/Base.astro";
 import Section from "../components/Section.astro";
 import Starfield from "../components/Starfield.astro";
-import Constellation from "../components/Constellation.astro";
+import Timeline from "../components/Timeline.astro";
 import SkyCoord from "../components/SkyCoord.astro";
 import ScrollBold from "../components/ScrollBold.astro";
 import LineSymbol from "../components/LineSymbol.astro";
 import TalkItem from "../components/TalkItem.astro";
-import { profile, metrics, paperById, papers, talks, press, venue, authorParts, type Paper } from "../lib/data";
+import { profile, metrics, paperById, papers, talks, press, type Paper } from "../lib/data";
 
 const sky = profile.sky;
 const m = metrics.headline;
@@ -17,9 +17,6 @@ const pinned = (profile.pinned as { id: string; image: string; credit: string; n
 const initials = profile.name.split(" ").map((w: string) => w[0]).join("");
 const [given, ...rest] = profile.name.split(" ");
 const TALKS_SHOWN = 6;
-// Newest refereed article of any role; updates automatically with the ADS pipeline.
-const latest = papers.find((p) => p.refereed && p.kind === "article")!;
-const latestAuthors = authorParts(latest);
 ---
 <Base>
   <!-- Hero -->
@@ -53,7 +50,7 @@ const latestAuthors = authorParts(latest);
   </Section>
 
   <Section id="trajectory" index="02" label="Trajectory">
-    <Constellation />
+    <Timeline />
   </Section>
 
   <Section id="research" index="03" label="Research" wide>
@@ -75,7 +72,26 @@ const latestAuthors = authorParts(latest);
     </ol>
   </Section>
 
-  <Section id="software" index="04" label="Software">
+  <Section id="papers" index="04" label="Selected papers" wide>
+    <ul class="posters">
+      {pinned.map(({ paper: p, image, credit, note }) => (
+        <li>
+          <a class="poster" href={p.links.doi ?? p.links.ads}>
+            <img src={image} alt="" loading="lazy" width="720" height="960" />
+            <span class="credit mono">{credit}</span>
+            <span class="cap">
+              <span class="meta mono">{p.year} · {p.journal}</span>
+              <span class="ttl">{p.title}</span>
+              <span class="note">{note}</span>
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p class="all"><a href="/publications">All {papers.length} publications, by role and year <span class="arrow">→</span></a></p>
+  </Section>
+
+  <Section id="software" index="05" label="Software">
     <dl class="software">
       {profile.software.map((s: any) => (
         <div class="sw">
@@ -87,7 +103,7 @@ const latestAuthors = authorParts(latest);
     <p class="gh"><a href={profile.github}><svg class="gh-mark" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>More on GitHub · <span class="mono">github.com/cbordiu</span> <span class="arrow">↗</span></a></p>
   </Section>
 
-  <Section id="projects" index="05" label="Projects">
+  <Section id="projects" index="06" label="Projects">
     <h3 class="grp label">As principal investigator</h3>
     <ul class="projects">
       {profile.projects.pi.map((p: any) => (
@@ -114,32 +130,21 @@ const latestAuthors = authorParts(latest);
         </li>
       ))}
     </ul>
-  </Section>
-
-  <Section id="papers" index="06" label="Selected papers" wide>
-    <a class="latest" href={latest.links.doi ?? latest.links.ads}>
-      <span class="beacon" aria-hidden="true"></span>
-      <span class="l-label mono">Latest publication · {latest.date.replace(/^(\d{4})-(\d{2})$/, (_, y, m) => new Date(+y, +m - 1).toLocaleString("en", { month: "short" }) + " " + y)}</span>
-      <span class="l-title">{latest.title}</span>
-      <span class="l-meta mono">{latestAuthors.names.join(", ")}{latestAuthors.more > 0 && ` … (+${latestAuthors.more})`} · {venue(latest)}</span>
-    </a>
-    <ul class="posters">
-      {pinned.map(({ paper: p, image, credit, note }) => (
-        <li>
-          <a class="poster" href={p.links.doi ?? p.links.ads}>
-            <img src={image} alt="" loading="lazy" width="720" height="960" />
-            <span class="credit mono">{credit}</span>
-            <span class="cap">
-              <span class="meta mono">{p.year} · {p.journal}</span>
-              <span class="ttl">{p.title}</span>
-              <span class="note">{note}</span>
-            </span>
-          </a>
+    <h3 class="grp label">Consortia &amp; collaborations</h3>
+    <ul class="projects">
+      {profile.collaborations.map((c: any) => (
+        <li class="proj collab">
+          <span class="when mono">{c.url ? <a href={c.url}>{c.name}</a> : c.name}</span>
+          <div>
+            <p class="pt">{c.full}</p>
+            {c.role && <p class="pf mono">{c.role}</p>}
+            {c.text && <p class="pd">{c.text}</p>}
+          </div>
         </li>
       ))}
     </ul>
-    <p class="all"><a href="/publications">All {papers.length} publications, by role and year <span class="arrow">→</span></a></p>
   </Section>
+
 
   <Section id="talks" index="07" label="Talks">
     <p class="talk-sum muted">{talks.length} contributions · {talks.filter((t) => t.kind === "invited").length} invited</p>
@@ -239,32 +244,6 @@ const latestAuthors = authorParts(latest);
   .sw dd { margin: 0; }
   @media (max-width: 34rem) { .sw { grid-template-columns: 1fr; } }
 
-  /* Latest publication, with a pulsing beacon */
-  .latest {
-    position: relative; display: grid; grid-template-columns: 1.2rem 1fr; gap: .15rem .8rem; align-items: baseline;
-    padding: 1rem 1.1rem 1.05rem; margin: 0 0 1.6rem; border: 1px solid var(--faint); border-radius: 4px;
-    text-decoration: none; background: color-mix(in srgb, var(--bg-raised) 60%, transparent);
-    transition: border-color .3s ease;
-  }
-  .latest:hover { color: inherit; border-color: color-mix(in srgb, var(--gold) 55%, transparent); }
-  .latest > :not(.beacon) { grid-column: 2; }
-  .beacon {
-    grid-row: 1; align-self: center; justify-self: center; position: relative;
-    width: .5rem; height: .5rem; border-radius: 50%; background: var(--gold);
-    animation: blink 1.6s ease-in-out infinite;
-  }
-  .beacon::after {
-    content: ""; position: absolute; inset: -.35rem; border-radius: 50%; border: 1px solid var(--gold);
-    animation: ping 1.6s ease-out infinite;
-  }
-  @keyframes blink { 50% { opacity: .35; } }
-  @keyframes ping { from { transform: scale(.4); opacity: .9; } to { transform: scale(1.6); opacity: 0; } }
-  @media (prefers-reduced-motion: reduce) { .beacon, .beacon::after { animation: none; } }
-  .l-label { color: var(--accent); font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; }
-  .l-title { font-size: 1.12rem; line-height: 1.35; margin-top: .2rem; }
-  .latest:hover .l-title { color: var(--accent); }
-  .l-meta { color: var(--muted); margin-top: .25rem; }
-
   /* Selected papers: four posters */
   .posters {
     list-style: none; margin: 0; padding: 0;
@@ -290,7 +269,7 @@ const latestAuthors = authorParts(latest);
   .poster:hover .credit, .poster:focus-visible .credit { opacity: 1; }
   @media (hover: none) { .credit { opacity: .8; } }
   .cap { position: absolute; z-index: 2; left: 0; right: 0; bottom: 0; padding: 1rem .95rem 1.05rem; display: flex; flex-direction: column; gap: .35rem; }
-  .cap .meta { font-size: .6rem; letter-spacing: .08em; color: #e9c27a; }
+  .cap .meta { font-size: .6rem; letter-spacing: .08em; color: #b9cbea; }
   .ttl { font-size: 1.02rem; line-height: 1.28; }
   .note {
     font-size: .84rem; font-style: italic; line-height: 1.35; color: rgba(243,239,230,.78);
@@ -333,6 +312,9 @@ const latestAuthors = authorParts(latest);
   .pi .pt::before { content: "✦ "; color: var(--gold); font-size: .8em; vertical-align: .1em; }
   .pf { margin-top: .3rem !important; color: var(--muted); }
   .pd { margin-top: .45rem !important; font-size: .95rem; color: color-mix(in srgb, var(--fg) 85%, var(--muted)); }
+  .collab .when { color: var(--fg); }
+  .collab .when a { color: var(--accent); text-decoration: none; }
+  .collab .when a:hover { text-decoration: underline; }
   @media (max-width: 34rem) { .proj { grid-template-columns: 1fr; gap: .2rem; } }
 
   /* Talks: first few, rest behind a disclosure */

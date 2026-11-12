@@ -1,0 +1,92 @@
+---
+// Research trajectory as a CV-style vertical timeline, newest first.
+import { profile } from "../lib/data";
+type Stop = { period: string; role: string; place: string; detail?: string; logo?: string; tier: "engineering" | "astronomy" | "current" };
+const items = [...(profile.trajectory as Stop[])].reverse();
+---
+<ol class="timeline">
+  {items.map((s) => (
+    <li class={`stop ${s.tier}`}>
+      <p class="period mono">{s.period}</p>
+      <div class="rail" aria-hidden="true"><span class="node" /></div>
+      <div class="text">
+        <h3>{s.role}</h3>
+        <p class="place">{s.place}</p>
+        {s.detail && <p class="detail muted">{s.detail}</p>}
+      </div>
+      <div class="logo-cell">
+        {s.logo && <span class={`logo ${s.logo}`} role="img" aria-label={s.place} style={`--logo:url(/logos/${s.logo}.png)`} />}
+      </div>
+    </li>
+  ))}
+</ol>
+
+<style>
+  .timeline { list-style: none; margin: 0; padding: 0; }
+  .stop {
+    /* --ny: vertical centre of the first text line (the role title), where the node sits. */
+    --ny: .8rem;
+    display: grid;
+    grid-template-columns: 7rem 1.25rem minmax(0, 1fr) 5.5rem;
+    grid-template-areas: "period rail text logo";
+    gap: 0 1.1rem;
+  }
+  .period {
+    grid-area: period; margin: 0; text-align: right;
+    line-height: 1; padding-top: calc(var(--ny) - .36rem);
+    color: var(--muted); white-space: nowrap;
+  }
+  .text { grid-area: text; padding-bottom: 2rem; }
+  h3 { font-size: 1.18rem; line-height: 1.35; }
+  .place { margin: .1rem 0 0; font-style: italic; color: var(--muted); }
+  .detail { margin: .35rem 0 0; font-size: .92rem; }
+
+  /* Rail: one continuous hairline, broken into per-row segments that meet at each node. */
+  .rail { grid-area: rail; position: relative; }
+  .rail::before {
+    content: ""; position: absolute; left: 50%; top: 0; bottom: 0;
+    width: 1px; transform: translateX(-50%); background: var(--line);
+  }
+  .stop:first-child .rail::before { top: var(--ny); }
+  .stop:last-child .rail::before { bottom: auto; height: var(--ny); }
+  .node {
+    position: absolute; left: 50%; top: var(--ny); transform: translate(-50%, -50%);
+    width: .6rem; height: .6rem; border-radius: 50%;
+    background: var(--bg); border: 1.5px solid var(--accent);
+  }
+  .astronomy .node { background: var(--accent); }
+  .current .node {
+    width: .75rem; height: .75rem; background: var(--accent);
+    box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px var(--accent);
+  }
+  .engineering .node { border-color: var(--muted); }
+  .engineering h3 { color: var(--muted); }
+  .current .period { color: var(--accent); }
+
+  /* Institution logos: single-colour masks in the muted ink, darkened on row hover. */
+  .logo-cell { grid-area: logo; position: relative; }
+  .logo {
+    position: absolute; left: 0; right: 0; top: var(--ny); transform: translateY(-35%);
+    display: block; height: 2.2rem;
+    background: var(--muted); opacity: .6; transition: opacity .25s ease, background-color .25s ease;
+    -webkit-mask: var(--logo) center / contain no-repeat; mask: var(--logo) center / contain no-repeat;
+  }
+  .logo.iaa { height: 1.7rem; }
+  .logo.telefonica { height: 1.2rem; }
+  .stop:hover .logo { opacity: 1; background: var(--fg); }
+
+  @media (max-width: 40rem) {
+    .stop {
+      --ny: .45rem;
+      grid-template-columns: 1rem minmax(0, 1fr) 3.4rem;
+      grid-template-areas: "rail period logo" "rail text logo";
+      gap: 0 .9rem;
+    }
+    .period { text-align: left; padding-top: 0; margin-bottom: .35rem; line-height: .9rem; }
+    .rail { grid-row: 1 / span 2; }
+    .logo-cell { grid-row: 1 / span 2; }
+    .logo { height: 1.6rem; transform: none; top: 0; }
+    .logo.iaa { height: 1.3rem; }
+    .logo.telefonica { height: .9rem; }
+  }
+</style>
